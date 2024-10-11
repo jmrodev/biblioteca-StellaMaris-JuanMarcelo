@@ -60,5 +60,6 @@ const menuBooks = () => {
     }       
 }
 
+export default menu;
 
 
