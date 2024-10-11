@@ -1,0 +1,27 @@
+{
+  "name": "biblioteca-stellamaris-juanmarcelo",
+  "version": "1.0.0",
+  "description": "Incorporate Objects and functions files ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmrodev/biblioteca-StellaMaris-JuanMarcelo.git"
+  },
+  "keywords": [
+    "TECDA",
+    "Programacion",
+    "Objetos",
+    "Funciones",
+    "JavaScript",
+    "NodeJs"
+  ],
+  "author": "Stella Maris Ibarra,Juan Marcelo Rodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmrodev/biblioteca-StellaMaris-JuanMarcelo/issues"
+  },
+  "homepage": "https://github.com/jmrodev/biblioteca-StellaMaris-JuanMarcelo#readme"
+}
