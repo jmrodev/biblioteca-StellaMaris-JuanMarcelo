@@ -1,0 +1,24 @@
+{
+  "loans": [
+    {
+      "client_id": 1,
+      "book_id": 101,
+      "loan_date": "2023-09-01",
+      "return_date": "2023-09-15"
+    },
+    {
+      "client_id": 1,
+      "book_id": 102,
+      "loan_date": "2023-09-20",
+      "return_date": null
+    },
+    {
+      "client_id": 2,
+      "book_id": 105,
+      "loan_date": "2023-09-10",
+      "return_date": "2023-09-25"
+    }
+  ]
+}
+
+  
