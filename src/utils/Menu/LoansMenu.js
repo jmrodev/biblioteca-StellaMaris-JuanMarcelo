@@ -1,6 +1,6 @@
 import prompt from "../prompt.js";
 import mainMenu from "./MainMenu.js";
-// import { createLoan, readLoan, updateLoan, deleteLoan } from "../../controllers/LoanController.js";
+import { createLoan, readLoan, updateLoan, deleteLoan } from "../../controllers/LoanController.js";
 
 const loansMenu = () => {
     console.clear()

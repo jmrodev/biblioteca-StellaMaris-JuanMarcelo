@@ -1,6 +1,6 @@
 import prompt from "../prompt.js";
 import mainMenu from "./MainMenu.js";
-// import { createBook, readBook, updateBook, deleteBook } from "../../controllers/BookController.js";
+import { createBook, readBook, updateBook, deleteBook } from "../../controllers/BookController.js";
 
 const booksMenu = () => {
     console.clear()
