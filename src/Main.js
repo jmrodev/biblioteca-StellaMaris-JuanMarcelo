@@ -1,2 +1,2 @@
-import { mainMenu } from  "./utils/menu.js"
+import { mainMenu } from  "./utils/Menu/Main.js"
 mainMenu();
