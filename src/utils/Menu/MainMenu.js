@@ -9,19 +9,18 @@ const mainMenu = () => {
         "Select an option: \n 1.manage clients \n 2.mananage books \n 3.manage loans \n\n\n")
     switch (option) {
         case 1:
-            clientsMenu;
+            clientsMenu();
             break;
         case 2:
-            booksMenu;
+            booksMenu();
             break;
         case 3:
-            loansMenu;
-            break
-
+            loansMenu();
+            break;
         default:
-            console.clear()
-            console.log("Invalid,please insert another option ");
-            mainMenu()
+            console.clear();
+            console.log("Opción inválida, por favor ingrese otra opción");
+            mainMenu();
             break;
     }
 }
