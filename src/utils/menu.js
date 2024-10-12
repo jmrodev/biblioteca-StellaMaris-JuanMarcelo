@@ -1,16 +1,17 @@
-import prompt_Sync from "prompt-sync";
-const prompt = prompt_Sync();
+import prompt from "./prompt.js";
 
 const mainMenu = () => {
-    const option = Number(prompt("select an option: "));
+    let option = prompt(
+        "Select an option: \n 1.Manage clients \n 2.MAnage books \n\n\n")
     switch (option) {
-        console.log("Manage clients");
-        case 1: clientsMenu();
+        case 1:
+            clientsMenu();
             break;
-            
-        case 2: booksMenu();
+        case 2:
+            booksMenu();
             break;
-        case 3: loansMenu();
+        case 3:
+            loansMenu();
             break
         default:
             console.log("Invalid,please insert another option ");
@@ -20,7 +21,7 @@ const mainMenu = () => {
 }
 
 const clientsMenu = () => {
-    const option = Number(prompt("select an option: "));
+    let option = prompt("Select an option: \n 1.Create an client \n 2.Edit an client \n 3.Delete an client\n\n\n ")
     switch (option) {
         case 1: createClient();
             break;
