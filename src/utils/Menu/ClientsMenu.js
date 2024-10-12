@@ -1,5 +1,5 @@
 import prompt from "../prompt.js";
-import mainMenu from "./Main.js";
+import mainMenu from "./MainMenu.js";
 
 const clientsMenu = () => {
     console.clear()
