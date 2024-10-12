@@ -1,12 +1,12 @@
-import Clients from '../data/clients.json'
+import Clients from '../data/clients.js'
 
 export const createClient =  () => {
     console.log("Crear cliente");
 }
 
-export const readClient = () => {
-    console.log("Leer cliente");
-    
+export const readClient = (id=2) => {
+    Clients.forEach((client)=>client.id == id?console.log(client):null
+    )
 }
 
 export const updateClient =  () => {
@@ -16,4 +16,6 @@ export const updateClient =  () => {
 export const deleteClient =  () => {
     console.log("Eliminar cliente");
 }
+
+
 
