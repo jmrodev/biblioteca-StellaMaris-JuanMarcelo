@@ -1,6 +1,7 @@
 import prompt from "./prompt.js";
 
 const mainMenu = () => {
+    console.clear()
     let option = prompt(
         "Select an option: \n 1.manage clients \n 2.mananage books \n 3.manage loans \n\n\n")
     switch (option) {
@@ -13,7 +14,9 @@ const mainMenu = () => {
         case 3:
             loansMenu();
             break
+
         default:
+            console.clear()
             console.log("Invalid,please insert another option ");
             mainMenu()
             break;
@@ -21,15 +24,18 @@ const mainMenu = () => {
 }
 
 const clientsMenu = () => {
-    let option = prompt("Select an option: \n 1.Create an client \n 2.Edit an client \n 3.Read an client \n 4.Delete an client\n\n\n ")
+    console.clear()
+    let option = prompt("Select an option: \n 1.Create an client \n 2.Read an client \n 3.Edit an client \n 4.Delete an client \n 5.Return to main menu \n\n\n ")
     switch (option) {
         case 1: createClient();
             break;
-        case 2: updateClient();
+        case 2: readClient();
             break;
-        case 3: deleteClient();
+        case 3: updateClient();
             break;
-            case 4: readClient();
+        case 4: deleteClient();
+            break;
+        case 5: mainMenu();
             break;
         default:
             console.log("Invalid,please insert another option ");
@@ -39,15 +45,18 @@ const clientsMenu = () => {
 }
 
 const booksMenu = () => {
-    const option = Number(prompt("Select an option : \n 1.Create an book \n 2.Edit an book \n  3.Read an book \n 4.Delete an book\n\n\n "));
+    console.clear()
+    const option = Number(prompt("Select an option : \n 1.Create an book \n 2.Read an book \n 3.Edit an book \n 4.Delete an book \n 5.Return to main menu \n\n\n "));
     switch (option) {
         case 1: createBooks();
             break;
-        case 2: updateBooks();
+        case 2: readBooks();
             break;
-        case 3: deleteBooks();
+        case 3: updateBooks();
             break;
-        case 4: readLoans();
+        case 4: deleteBooks();
+            break;
+        case 5: mainMenu();
             break;
         default:
             console.log("Invalid,please insert another option ");
@@ -58,15 +67,19 @@ const booksMenu = () => {
 }
 
 const loansMenu = () => {
-    const option = Number(prompt("Select an option : \n 1.Create an loans \n  2.Edit an loans  \n 3.Read  an loans \n 4.Delete  an loans\n\n\n  "));
+    console.clear()
+    const option = Number(prompt("Select an option : \n 1.Create an loans \n 2.Read an loans \n 3.Edit an loans \n 4.Delete  an loans \n 5.Return to main menu \n\n\n "));
     switch (option) {
         case 1: createLoans();
             break;
-        case 2: updateLoans();
+        case 2: readLoans();
             break;
-        case 3: deleteLoans();
+        case 3: updateLoans();
             break;
-        case 4: readLoans();
+        case 4: deleteLoans();
+            break;
+        case 5: mainMenu();
+            break;
         default:
             console.log("Invalid,please insert another option ");
             loansMenu();
