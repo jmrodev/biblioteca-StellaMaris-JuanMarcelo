@@ -4,8 +4,10 @@ const prompt = prompt_Sync();
 const mainMenu = () => {
     const option = Number(prompt("select an option: "));
     switch (option) {
+        console.log("Manage clients");
         case 1: clientsMenu();
             break;
+            
         case 2: booksMenu();
             break;
         case 3: loansMenu();
