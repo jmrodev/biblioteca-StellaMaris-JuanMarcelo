@@ -37,7 +37,7 @@ const clientsMenu = () => {
 }
 
 const booksMenu = () => {
-    const option = Number(prompt("select an option : "));
+    const option = Number(prompt("Select an option : \n 1.Create an book \n 2.Edit an book \n 3.Delete an book\n\n\n "));
     switch (option) {
         case 1: createBooks();
             break;
@@ -56,7 +56,7 @@ const booksMenu = () => {
 }
 
 const loansMenu = () => {
-    const option = Number(prompt("select an option : "));
+    const option = Number(prompt("Select an option : \n 1.Create an loans \n  2.Edit an loans \n 3.Delete  an loans\n\n\n  "));
     switch (option) {
         case 1: createLoans();
             break;
