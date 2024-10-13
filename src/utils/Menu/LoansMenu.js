@@ -23,7 +23,6 @@ const loansMenu = () => {
             break;
         default:
             console.log("Opción inválida, por favor ingrese otra opción");
-            loansMenu();
             break;
     }
 }

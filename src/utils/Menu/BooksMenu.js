@@ -23,7 +23,6 @@ const booksMenu = () => {
             break;
         default:
             console.log("Opción inválida, por favor ingrese otra opción");
-            booksMenu();
             break;
     }
 }
