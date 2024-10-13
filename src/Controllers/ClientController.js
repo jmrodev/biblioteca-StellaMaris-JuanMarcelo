@@ -1,22 +1,12 @@
-import ClientRepository from '../Repositories/ClientRepository.js'
+import prompt from "../utils/prompt.js";
+import Client from '../Models/ClientSchema.js';
+import clientsMenu from "../utils/Menu/ClientsMenu.js";
 
-export const createClient =  () => {
+export const createClient = () => {
+
+
+    console.log("Ingrese el nombre");
+    let name = prompt()
+    console.log("Ingrese email");
     
-
-}
-
-export const readClient = (id = null) => {
    
-}
-
-
-export const updateClient =  () => {
-    console.log("Actualizar cliente");
-}
-
-export const deleteClient =  () => {
-    console.log("Eliminar cliente");
-}
-
-
-
