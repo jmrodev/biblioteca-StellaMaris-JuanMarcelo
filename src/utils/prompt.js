@@ -5,6 +5,6 @@ const prompt = promptSync();
 export default (options) => {
     console.clear();
     console.log(options);
-    const option = Number(prompt());
+    const option = prompt();
     return option;  
 };

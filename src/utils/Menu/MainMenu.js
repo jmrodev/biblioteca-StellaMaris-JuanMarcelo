@@ -5,10 +5,12 @@ import loansMenu from './LoansMenu.js';
 
 const mainMenu = () => {
     let option = 1
-    console.clear()
+    
     while (option !== 0) {
-        option = prompt(
-            "Select an option: \n 1.manage clients \n 2.mananage books \n 3.manage loans \n\n\n")
+        console.clear()
+        option = parseInt(
+            prompt("Select an option: \n 1.manage clients \n 2.mananage books \n 3.manage loans \n 0.Salir \n\n\n"
+            ))
         switch (option) {
             case 1:
                 clientsMenu();
