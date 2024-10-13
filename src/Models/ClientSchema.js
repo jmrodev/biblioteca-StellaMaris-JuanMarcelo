@@ -10,3 +10,5 @@ const Client = Schema("Client", {
     direccion: { type: String, required: true },
     fecha_registro: { type: String, required: true }
 });
+
+export default Client;

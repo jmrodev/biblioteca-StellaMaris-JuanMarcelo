@@ -7,7 +7,8 @@ const clientsMenu = () => {
     let option = prompt("Seleccione una opción: \n 1.Crear un cliente \n 2.Leer un cliente \n 3.Editar un cliente \n 4.Eliminar un cliente \n 5.Volver al menú principal \n\n\n ");
     switch (Number(option)) {
         case 1: 
-            createClient();
+        let name = prompt("Ingrese el nombre del cliente: ");
+            createClient(name);
             break;
         case 2: 
             readClient();
