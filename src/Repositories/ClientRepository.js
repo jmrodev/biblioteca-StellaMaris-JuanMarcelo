@@ -1,6 +1,6 @@
 import ClientSchema from '../Models/ClientSchema.js'
 
-const NewClient = ClientSchema.create({
+const newClient = ClientSchema.create({
     _id: id,
     name: username,
     email:email,
@@ -9,9 +9,7 @@ const NewClient = ClientSchema.create({
     fecha_regitro: fecha_regitro,
 }).save();
 
-const getClients = () => {
-    
-}
 
-return NewClient;
+
+export default newClient;
 
