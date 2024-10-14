@@ -7,8 +7,8 @@ let pause = PromptSync()
 export const createLoan= () => {
     let book_name = prompt("Ingrese el nombre del libro")
     let client_name = prompt("Ingrese el nombre del cliente")
-    let date_loan = prompt("Ingrese fecha prestamo")
-    let date_return = prompt("Ingrese fecha devolucion")
+    let date_loan = prompt("Ingrese fecha prestamo (YYYY-MM-DD)")
+    let date_return = prompt("Ingrese fecha devolucion (YYYY-MM-DD)")
 
 
     const Loan = newLoan({
