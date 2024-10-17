@@ -20,3 +20,7 @@ export const createLoan= () => {
     console.log("Registro creado exitosamente", Loan)
     pause("Presionar  una tecla para continuar")
 }
+
+export const getLoans =()=>{
+    
+}

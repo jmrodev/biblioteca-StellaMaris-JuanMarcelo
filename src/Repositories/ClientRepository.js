@@ -22,4 +22,9 @@ const newClient = (dataClient) => {
     return newClient.save();
 }
 
+const removeClient =(id)=>{
+    const deleteClient = ClientSchema.remove(id)
+    console.log("Cliente eliminado",deleteClient);
+}
+
 export { newClient }

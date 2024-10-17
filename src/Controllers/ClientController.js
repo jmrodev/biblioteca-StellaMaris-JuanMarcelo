@@ -20,3 +20,7 @@ export const createClient = () => {
     console.log("Cliente creado exitosamente", Client)
     pause("Presionar  una tecla para continuar")
 }
+
+const deleteClient = ()=> {
+prompt("Quiere eliminar este cliente")
+}

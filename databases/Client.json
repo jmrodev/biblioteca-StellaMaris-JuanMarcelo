@@ -1,1 +1,18 @@
-[{"_id":85107,"name":"frenanda","email":"rodriguz@gmail.com","telefono":"2494287029","direccion":"salta 1961","fecha_registro":"domingo, 13 de octubre de 2024"},{"_id":36742,"name":"sf","email":"sdfg","telefono":"sdfg","direccion":"dfsgsdf","fecha_registro":"domingo, 13 de octubre de 2024"}]
+[
+    {
+        "_id": 85107,
+        "name": "frenanda",
+        "email": "rodriguz@gmail.com",
+        "telefono": "2494287029",
+        "direccion": "salta 1961",
+        "fecha_registro": "domingo, 13 de octubre de 2024"
+    },
+    {
+        "_id": 36742,
+        "name": "sf",
+        "email": "sdfg",
+        "telefono": "sdfg",
+        "direccion": "dfsgsdf",
+        "fecha_registro": "domingo, 13 de octubre de 2024"
+    }
+]
