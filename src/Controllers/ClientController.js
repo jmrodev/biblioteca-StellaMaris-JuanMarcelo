@@ -1,5 +1,5 @@
 import prompt from "../utils/prompt.js";
-import { newClient,getAllClients,getClientById,removeClient,updateClient } from '../Repositories/ClientRepository.js'
+import { newClient } from '../Repositories/ClientRepository.js'
 import PromptSync from "prompt-sync";
 
 let pause = PromptSync() 
@@ -22,10 +22,10 @@ export const createClient = () => {
 }
 
 const deleteClient = ()=> {
-const remove = prompt("Eliminar un Cliente, ingrese el id")
-deleteClient(remove);
-}
-const getAllClients = ()=>{
-    const Clients = prompt("Lista de clientes")
-    getAllClients(Clients),
-}
+    const remove = prompt("Eliminar un Cliente, ingrese el id")
+    deleteClient(remove);
+    }
+    const getAllClients = ()=>{
+        const Clients = prompt("Lista de clientes")
+        getAllClients(Clients),
+    }
