@@ -22,9 +22,10 @@ export const createClient = () => {
 }
 
 const deleteClient = ()=> {
-let remove = prompt("Eliminar un Cliente, ingrese el id")
+const remove = prompt("Eliminar un Cliente, ingrese el id")
 deleteClient(remove);
 }
 const getAllClients = ()=>{
-    getAllClients();
+    const Clients = prompt("Lista de clientes")
+    getAllClients(Clients),
 }
