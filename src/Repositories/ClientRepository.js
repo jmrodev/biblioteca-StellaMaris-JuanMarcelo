@@ -27,13 +27,13 @@ const removeClient =(id)=>{
     console.log("Cliente eliminado",deleteClient);
 }
 const getAllClients = ()=>{
-  return  ClientSchema.find({});
-}
-
-const getClientById = (id)=>{
-    return ClientSchema.findOne({_id:id});
-}
-const updateClient = (id)=>{
-    return ClientSchema.update({_id:id});
-}
-export { newClient,removeClient,getAllClients,updateClient,getClientById}
+    return  ClientSchema.find({});
+  }
+  
+  const getClientById = (id)=>{
+      return ClientSchema.findOne({_id:id});
+  }
+  const updateClient = (id)=>{
+      return ClientSchema.update({_id:id});
+  }
+  export { newClient,removeClient,getAllClients,updateClient,getClientById}
