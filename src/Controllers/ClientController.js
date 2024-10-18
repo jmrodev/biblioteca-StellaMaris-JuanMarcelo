@@ -1,5 +1,5 @@
 import prompt from "../utils/prompt.js";
-import { newClient } from '../Repositories/ClientRepository.js'
+import { newClient,getAllClients,getClientById,removeClient,updateClient} from '../Repositories/ClientRepository.js'
 import PromptSync from "prompt-sync";
 
 let pause = PromptSync() 
