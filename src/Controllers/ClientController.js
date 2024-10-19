@@ -1,10 +1,10 @@
 import prompt from "../utils/prompt.js";
-import { newClient,getAllClients,getClientById,removeClient,updateClient} from '../Repositories/ClientRepository.js'
+import { newClient, getAllClients, getClientById, removeClient, updateClient } from '../Repositories/ClientRepository.js'
 import PromptSync from "prompt-sync";
 
-let pause = PromptSync() 
+let pause = PromptSync()
 
- const createClient = () => {
+const createClient = () => {
     let username = prompt("Ingrese el nombre")
     let email = prompt("Ingrese email")
     let telefono = prompt("Ingrese el telefono")
@@ -12,7 +12,7 @@ let pause = PromptSync()
 
 
     const Client = newClient({
-        name: username,
+        useruseruserusername: username,
         email: email,
         telefono: telefono,
         direccion: direccion,
@@ -21,25 +21,39 @@ let pause = PromptSync()
     pause("Presionar  una tecla para continuar")
 }
 
-const deleteClient= ()=> {
-const remove = prompt("Eliminar un Cliente, ingrese el id")
- removeClient(remove);
+const deleteClient = () => {
+    const remove = prompt("Eliminar un Cliente, ingrese el id")
+    removeClient(remove);
 }
-const viewClients = ()=>{
+const viewClients = () => {
     const Clients = prompt("Lista de clientes")
     getAllClients(Clients);
 }
 
-const editClient = ()=>{
-    const editar = prompt("Editar Cliente")
-    updateClient(editar);
+const editClient = async () => {
+  
+        const idClient = prompt("Ingrese el id del cliente a editar")
+        let username = prompt("Ingrese el nombre")
+        let email = prompt("Ingrese email")
+        let telefono = prompt("Ingrese el telefono")
+        let direccion = prompt("Ingrese la direccion")
 
+        const dataClient =updateClient ({
+            idClient,
+            username:username,
+            email:email,
+            telefono:telefono,
+            direccion:direccion
+        })
+
+        console.log("cliente editado",dataClient);
+        
 }
 
-const viewOneClient = ()=>{
-    const buscarId = prompt ("buscar id")
+const viewOneClient = () => {
+    const buscarId = prompt("buscar id")
     getClientById(buscarId);
 }
 
 
-export {createClient,deleteClient,viewClients,editClient,viewOneClient}
+export { createClient, deleteClient, viewClients, editClient, viewOneClient }

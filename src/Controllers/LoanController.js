@@ -12,7 +12,7 @@ export const createLoan= () => {
 
 
     const Loan = newLoan({
-        book_name: book_name,
+        book_username: book_name,
         client_name: client_name,
         date_loan: date_loan,
         date_return: date_return,

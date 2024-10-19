@@ -3,7 +3,7 @@ import mainMenu from "./MainMenu.js";
 import { createLoan, } from "../../Controllers/LoanController.js";
 
 const loansMenu = () => {
-    console.clear()
+    //console.clear()
     const option = Number(prompt("Seleccione una opción: \n 1. Crear un préstamo \n 2. Leer un préstamo \n 3. Editar un préstamo \n 4. Eliminar un préstamo \n 5. Volver al menú principal \n\n\n "));
     switch (option) {
         case 1: 
