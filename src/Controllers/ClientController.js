@@ -30,21 +30,21 @@ const viewClients = () => {
     getAllClients(Clients);
 }
 
-const editClient = async () => {
+const editClient =  () => {
   
-        const idClient = prompt("Ingrese el id del cliente a editar")
+        let idClient = prompt("Ingrese el id del cliente a editar")
         let username = prompt("Ingrese el nombre")
         let email = prompt("Ingrese email")
         let telefono = prompt("Ingrese el telefono")
         let direccion = prompt("Ingrese la direccion")
 
-        const dataClient =updateClient ({
+        const dataClient =  updateClient({
             idClient,
-            username:username,
-            email:email,
-            telefono:telefono,
-            direccion:direccion
-        })
+            username,
+            email,
+            telefono,
+            direccion
+        });
 
         console.log("cliente editado",dataClient);
         

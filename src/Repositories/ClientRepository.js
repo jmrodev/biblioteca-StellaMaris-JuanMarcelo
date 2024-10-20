@@ -34,24 +34,31 @@ const getClientById = (id) => {
     return ClientSchema.findOne({ _id: id });
 }
 
-const updateClient = async (dataClient) => {
-    console.log("New client data:", dataClient);
-    prompt("presione tecla")
-    const id = dataClient.id
+const updateClient =  (dataClient) => {
+    console.log("New client data nnnfffn:", typeof(dataClient));
 
-    await ClientSchema.update({ _id: id },
-        {
-            username: dataClient.username,
-            // email: dataClient.email,
-            // telefono: dataClient.telefono,
-            // direccion: dataClient.direccion,
+    console.log("data destructurada",dataClient.username);
+    console.log("ID:", dataClient.idClient);
+    console.log("Username:", dataClient.username);
+    console.log("Email:", dataClient.email);
+    console.log("Teléfono:", dataClient.telefono);
+    console.log("Dirección:", dataClient.direccion);
+    let ID = parseInt(dataClient.idClient) 
+    console.log("ID:", ID);
+    const client =  ClientSchema.findOne({ _id: ID});
+    prompt("stop")
 
-        }
+    if (!client) {
+        console.log("Client not found");
+        return null;
+    }
 
-    )
-   
+    client.username = dataClient.username;
+    client.email = dataClient.email;
+    client.telefono = dataClient.telefono;
+    client.direccion = dataClient.direccion;
 
-    return updateClient.save;
+    return client.save();
 }
 
 export { newClient, removeClient, getAllClients, updateClient, getClientById }
