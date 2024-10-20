@@ -22,16 +22,22 @@ const newClient = (dataClient) => {
     return newClient.save();
 }
 
-const removeClient = (id) => {
+const removeClient = (idString) => {
+    const id = parseInt(idString)
     const deleteClient = ClientSchema.remove({ _id: id })
     console.log("Cliente eliminado", deleteClient);
+
+    
 }
 const getAllClients = () => {
-    return ClientSchema.find({});
+    console.log( ClientSchema.find({  }))
 }
 
-const getClientById = (id) => {
-    return ClientSchema.findOne({ _id: id });
+const getClientById = (idString) => {
+let id = parseInt(idString)
+     let findClient= ClientSchema.findOne({ _id: id });
+     console.log(findClient);
+     
 }
 
 const updateClient =  (dataClient) => {

@@ -22,12 +22,11 @@ const createClient = () => {
 }
 
 const deleteClient = () => {
-    const remove = prompt("Eliminar un Cliente, ingrese el id")
-    removeClient(remove);
+    const idClient = prompt("Eliminar un Cliente, ingrese el id")
+    removeClient(idClient);
 }
 const viewClients = () => {
-    const Clients = prompt("Lista de clientes")
-    getAllClients(Clients);
+    getAllClients();
 }
 
 const editClient =  () => {
