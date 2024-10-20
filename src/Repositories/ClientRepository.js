@@ -39,21 +39,19 @@ const updateClient = async (dataClient) => {
     prompt("presione tecla")
     const id = dataClient.id
 
-        // const userFound = await ClientSchema.findOne({ _id: id })
-        const userFound = await ClientSchema.findOne({ _id:36742})
-        console.log("userFound",userFound);
-        prompt("Presione una tecla para continuar");
+    await ClientSchema.update({ _id: id },
+        {
+            username: dataClient.username,
+            // email: dataClient.email,
+            // telefono: dataClient.telefono,
+            // direccion: dataClient.direccion,
 
-        userFound.username = dataClient.username;
-        userFound.email = dataClient.email;
-        userFound.telefono = dataClient.telefono;
-        userFound.direccion = dataClient.direccion;
+        }
 
-        const updatedUser = await userFound.save();
-
-        return updatedUser;
-  
+    )
    
+
+    return updateClient.save;
 }
 
 export { newClient, removeClient, getAllClients, updateClient, getClientById }
