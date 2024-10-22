@@ -37,7 +37,7 @@ const deleteBook = () => {
 const viewBooks = () => {
     try {
         const books = getAllBooks();
-        console.log("Lista de libros:", books);
+        console.table("Lista de libros:", books);
     } catch (error) {
         console.error("Error al obtener los libros:", error.message);
     }
