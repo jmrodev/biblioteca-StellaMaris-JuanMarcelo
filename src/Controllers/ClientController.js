@@ -47,7 +47,8 @@ const editClient =  () => {
             direccion
         });
 
-        console.log("cliente editado",dataClient);
+        console.table("cliente editado",dataClient);
+        prompt("Presione Enter para continuar........");
         
 }
 
