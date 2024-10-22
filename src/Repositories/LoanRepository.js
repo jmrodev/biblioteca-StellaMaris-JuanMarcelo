@@ -1,63 +1,52 @@
-import LoanSchema from '../Models/LoanSchema.js'
-import { format } from "@formkit/tempo"
-import PromptSync from 'prompt-sync';
-
-let prompt = PromptSync()
+import Loan from '../Models/LoanSchema.js'
+import { format} from "@formkit/tempo"
 
 const newLoan = (dataLoan) => {
-    console.log(dataLoan);
     if (!dataLoan.client_id || !dataLoan.book_id) {
-        console.log("Los campos client_id y book_id son obligatorios");
-        prompt("Presione una tecla para continuar")
-        return null;
+        throw new Error("ID del cliente y del libro son obligatorios");
     }
 
-    const loanDate = dataLoan.loan_date ? new Date(dataLoan.loan_date) : new Date();
-    const dueDate = addDays(loanDate, 14); // 14 días de préstamo por defecto
+    const fechaPrestamo = new Date();
+    const fechaDevolucion = (fechaPrestamo, 14); // Préstamo por 14 días
 
-    const newLoan = LoanSchema.create({
-        _id: Math.floor(Math.random()*100000), // Usa un número aleatorio como ID único
-        client_id: dataLoan.client_id,
-        book_id: dataLoan.book_id,
-        loan_date: format(loanDate, "YYYY-MM-DD"),
-        due_date: format(dueDate, "YYYY-MM-DD"),
-        return_date: dataLoan.return_date ? format(new Date(dataLoan.return_date), "YYYY-MM-DD") : null
+    const newLoan = Loan.create({
+        _id: Math.floor(Math.random() * 100000),
+        client_id: parseInt(dataLoan.client_id),
+        book_id: parseInt(dataLoan.book_id),
+        fecha_prestamo: format(fechaPrestamo, "full"),
+        fecha_devolucion: format(fechaDevolucion, "full"),
+        estado: "activo"
     });
 
-    if (newLoan.return_date && new Date(newLoan.return_date) <= new Date(newLoan.loan_date)) {
-        console.log("La fecha de devolución debe ser posterior a la fecha de préstamo");
-        prompt("Presione una tecla para continuar")
-        return null;
-    }
-
-    return newLoan.save();
+    return newLoan;
 }
 
-// Función para obtener todos los préstamos
+const removeLoan = (id) => {
+    const deleteLoan = Loan.remove({ _id: parseInt(id) });
+    return deleteLoan;
+}
+
 const getAllLoans = () => {
-    return LoanSchema.find();
+    return Loan.find({});
 }
 
-// Función para obtener un préstamo por ID
 const getLoanById = (id) => {
-    return LoanSchema.findOne({ _id: id });
+    return Loan.findOne({ _id: parseInt(id) });
 }
 
-// Función para actualizar la fecha de devolución de un préstamo
-const updateReturnDate = (id, returnDate) => {
-    return LoanSchema.findOne({ _id: id }).then(loan => {
-        if (!loan) {
-            throw new Error('Préstamo no encontrado');
-        }
-        
-        const newReturnDate = new Date(returnDate);
-        if (newReturnDate <= new Date(loan.loan_date)) {
-            throw new Error('La fecha de devolución debe ser posterior a la fecha de préstamo');
-        }
+const updateLoan = (dataLoan) => {
+    const loan = Loan.findOne({ _id: parseInt(dataLoan.idLoan) });
 
-        loan.return_date = format(newReturnDate, "YYYY-MM-DD");
-        return loan.save();
-    });
+    if (!loan) {
+        throw new Error("Préstamo no encontrado");
+    }
+
+    loan.client_id = parseInt(dataLoan.client_id);
+    loan.book_id = parseInt(dataLoan.book_id);
+    loan.fecha_devolucion = dataLoan.fecha_devolucion;
+    loan.estado = dataLoan.estado;
+
+    return loan.save();
 }
 
-export { newLoan, getAllLoans, getLoanById, updateReturnDate }
+export { newLoan, removeLoan, getAllLoans, updateLoan, getLoanById }

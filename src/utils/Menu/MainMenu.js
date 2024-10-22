@@ -33,9 +33,8 @@ const mainMenu = async () => {
             default:
                 if (option !== 0) {
                     console.log("Invalid option, please enter another option");
-                } else {
-                    console.log("Goodbye");
-                }
+                } 
+                console.log("Goodbye");
                 break;
         }
     }

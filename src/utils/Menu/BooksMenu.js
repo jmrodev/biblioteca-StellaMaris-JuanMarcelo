@@ -1,30 +1,38 @@
 import prompt from "../prompt.js";
 import mainMenu from "./MainMenu.js";
-import { createBook } from "../../Controllers/BookController.js";
+import { createBook, deleteBook, viewBooks, editBook, viewOneBook } from "../../Controllers/BookController.js";
 
 const booksMenu = () => {
-    //console.clear()
-    const option = Number(prompt("Seleccione una opción: \n 1. Crear un libro \n 2. Leer un libro \n 3. Editar un libro \n 4. Eliminar un libro \n 5. Volver al menú principal \n\n\n "));
-    switch (option) {
+    console.clear();
+    let option = prompt(
+        "Seleccione una opción: \n 1.Crear un libro \n 2.Leer un libro \n 3.Editar un libro \n 4.Eliminar un libro \n 5.Ver lista de libros \n 6.Volver al menú principal \n\n\n "
+    );
+    
+    switch (Number(option)) {
         case 1: 
             createBook();
             break;
         case 2: 
-            readBook();
+            viewOneBook();
             break;
         case 3: 
-            updateBook();
+            editBook();
             break;
         case 4: 
             deleteBook();
             break;
         case 5: 
+            viewBooks();
+            break;
+        case 6:
             mainMenu();
             break;
         default:
             console.log("Opción inválida, por favor ingrese otra opción");
             break;
     }
+    prompt("Presione Enter para continuar...");
+    booksMenu();
 }
 
 export default booksMenu;

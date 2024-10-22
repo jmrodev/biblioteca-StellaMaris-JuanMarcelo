@@ -1,1 +1,182 @@
-[]
+[
+    {
+        "_id": 1001,
+        "id_libro": 12345,
+        "id_cliente": 85107,
+        "fecha_prestamo": "2024-10-15",
+        "fecha_devolucion_esperada": "2024-10-29",
+        "fecha_devolucion_real": null,
+        "estado": "Activo"
+    },
+    {
+        "_id": 1002,
+        "id_libro": 23456,
+        "id_cliente": 36742,
+        "fecha_prestamo": "2024-10-16",
+        "fecha_devolucion_esperada": "2024-10-30",
+        "fecha_devolucion_real": null,
+        "estado": "Activo"
+    },
+    {
+        "_id": 1003,
+        "id_libro": 34567,
+        "id_cliente": 92103,
+        "fecha_prestamo": "2024-10-17",
+        "fecha_devolucion_esperada": "2024-10-31",
+        "fecha_devolucion_real": "2024-10-30",
+        "estado": "Devuelto"
+    },
+    {
+        "_id": 1004,
+        "id_libro": 45678,
+        "id_cliente": 54321,
+        "fecha_prestamo": "2024-10-18",
+        "fecha_devolucion_esperada": "2024-11-01",
+        "fecha_devolucion_real": null,
+        "estado": "Activo"
+    },
+    {
+        "_id": 1005,
+        "id_libro": 56789,
+        "id_cliente": 78901,
+        "fecha_prestamo": "2024-10-19",
+        "fecha_devolucion_esperada": "2024-11-02",
+        "fecha_devolucion_real": "2024-11-01",
+        "estado": "Devuelto"
+    },
+    {
+        "_id": 1006,
+        "id_libro": 67890,
+        "id_cliente": 23456,
+        "fecha_prestamo": "2024-10-20",
+        "fecha_devolucion_esperada": "2024-11-03",
+        "fecha_devolucion_real": null,
+        "estado": "Activo"
+    },
+    {
+        "_id": 1007,
+        "id_libro": 78901,
+        "id_cliente": 67890,
+        "fecha_prestamo": "2024-10-21",
+        "fecha_devolucion_esperada": "2024-11-04",
+        "fecha_devolucion_real": null,
+        "estado": "Activo"
+    },
+    {
+        "_id": 1008,
+        "id_libro": 89012,
+        "id_cliente": 12345,
+        "fecha_prestamo": "2024-10-22",
+        "fecha_devolucion_esperada": "2024-11-05",
+        "fecha_devolucion_real": "2024-11-04",
+        "estado": "Devuelto"
+    },
+    {
+        "_id": 1009,
+        "id_libro": 90123,
+        "id_cliente": 45678,
+        "fecha_prestamo": "2024-10-23",
+        "fecha_devolucion_esperada": "2024-11-06",
+        "fecha_devolucion_real": null,
+        "estado": "Activo"
+    },
+    {
+        "_id": 1010,
+        "id_libro": 10234,
+        "id_cliente": 89012,
+        "fecha_prestamo": "2024-10-24",
+        "fecha_devolucion_esperada": "2024-11-07",
+        "fecha_devolucion_real": "2024-11-05",
+        "estado": "Devuelto"
+    },
+    {
+        "_id": 1011,
+        "id_libro": 11345,
+        "id_cliente": 34567,
+        "fecha_prestamo": "2024-10-25",
+        "fecha_devolucion_esperada": "2024-11-08",
+        "fecha_devolucion_real": null,
+        "estado": "Activo"
+    },
+    {
+        "_id": 1012,
+        "id_libro": 12456,
+        "id_cliente": 78901,
+        "fecha_prestamo": "2024-10-26",
+        "fecha_devolucion_esperada": "2024-11-09",
+        "fecha_devolucion_real": null,
+        "estado": "Activo"
+    },
+    {
+        "_id": 1013,
+        "id_libro": 13567,
+        "id_cliente": 23456,
+        "fecha_prestamo": "2024-10-27",
+        "fecha_devolucion_esperada": "2024-11-10",
+        "fecha_devolucion_real": "2024-11-08",
+        "estado": "Devuelto"
+    },
+    {
+        "_id": 1014,
+        "id_libro": 14678,
+        "id_cliente": 67890,
+        "fecha_prestamo": "2024-10-28",
+        "fecha_devolucion_esperada": "2024-11-11",
+        "fecha_devolucion_real": null,
+        "estado": "Activo"
+    },
+    {
+        "_id": 1015,
+        "id_libro": 15789,
+        "id_cliente": 12345,
+        "fecha_prestamo": "2024-10-29",
+        "fecha_devolucion_esperada": "2024-11-12",
+        "fecha_devolucion_real": null,
+        "estado": "Activo"
+    },
+    {
+        "_id": 1016,
+        "id_libro": 16890,
+        "id_cliente": 45678,
+        "fecha_prestamo": "2024-10-30",
+        "fecha_devolucion_esperada": "2024-11-13",
+        "fecha_devolucion_real": null,
+        "estado": "Activo"
+    },
+    {
+        "_id": 1017,
+        "id_libro": 17901,
+        "id_cliente": 89012,
+        "fecha_prestamo": "2024-10-31",
+        "fecha_devolucion_esperada": "2024-11-14",
+        "fecha_devolucion_real": "2024-11-13",
+        "estado": "Devuelto"
+    },
+    {
+        "_id": 1018,
+        "id_libro": 18012,
+        "id_cliente": 34567,
+        "fecha_prestamo": "2024-11-01",
+        "fecha_devolucion_esperada": "2024-11-15",
+        "fecha_devolucion_real": null,
+        "estado": "Activo"
+    },
+    {
+        "_id": 1019,
+        "id_libro": 19123,
+        "id_cliente": 78901,
+        "fecha_prestamo": "2024-11-02",
+        "fecha_devolucion_esperada": "2024-11-16",
+        "fecha_devolucion_real": null,
+        "estado": "Activo"
+    },
+    {
+        "_id": 1020,
+        "id_libro": 20234,
+        "id_cliente": 23456,
+        "fecha_prestamo": "2024-11-03",
+        "fecha_devolucion_esperada": "2024-11-17",
+        "fecha_devolucion_real": "2024-11-15",
+        "estado": "Devuelto"
+    }
+]

@@ -9,7 +9,7 @@ const Client = Schema("Client", {
     email: { type: String, required: true },
     telefono: { type: String, required: true },
     direccion: { type: String, required: true },
-    fecha_registro: { type: Date}
+    fecha_registro: { type: Date }
 });
 
 export default Client;

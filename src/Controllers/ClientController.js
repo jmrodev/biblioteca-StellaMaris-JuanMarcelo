@@ -26,7 +26,9 @@ const deleteClient = () => {
     removeClient(idClient);
 }
 const viewClients = () => {
-    getAllClients();
+    const clients = getAllClients();
+    console.table(clients);
+    pause("Presionar una tecla para continuar");
 }
 
 const editClient =  () => {
@@ -51,7 +53,13 @@ const editClient =  () => {
 
 const viewOneClient = () => {
     const buscarId = prompt("buscar id")
-    getClientById(buscarId);
+    const client = getClientById(buscarId);
+    if (client) {
+        console.table([client]);
+    } else {
+        console.log("Cliente no encontrado");
+    }
+    pause("Presionar una tecla para continuar");
 }
 
 

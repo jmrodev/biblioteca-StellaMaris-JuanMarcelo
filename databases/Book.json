@@ -1,20 +1,182 @@
 [
     {
-        "_id": 5992,
-        "title": "ery",
-        "author": "jdfjdf",
-        "genre": "afvdfv",
-        "price": "34635",
-        "year": "4344",
-        "fecha_registro": "domingo, 13 de octubre de 2024"
+        "_id": 12345,
+        "titulo": "Cien años de soledad",
+        "autor": "Gabriel García Márquez",
+        "isbn": "978-0307474728",
+        "genero": "Realismo mágico",
+        "fecha_publicacion": "1967-05-30",
+        "estado": "Disponible"
     },
     {
-        "_id": 36151,
-        "title": "fgdh",
-        "author": "fdhgh",
-        "genre": "dfhgh",
-        "price": "dfgh",
-        "year": "fdgh",
-        "fecha_registro": "domingo, 13 de octubre de 2024"
+        "_id": 23456,
+        "titulo": "El Aleph",
+        "autor": "Jorge Luis Borges",
+        "isbn": "978-0142437883",
+        "genero": "Ficción",
+        "fecha_publicacion": "1949-06-15",
+        "estado": "Prestado"
+    },
+    {
+        "_id": 34567,
+        "titulo": "Rayuela",
+        "autor": "Julio Cortázar",
+        "isbn": "978-8437604572",
+        "genero": "Novela experimental",
+        "fecha_publicacion": "1963-06-28",
+        "estado": "Disponible"
+    },
+    {
+        "_id": 45678,
+        "titulo": "La ciudad y los perros",
+        "autor": "Mario Vargas Llosa",
+        "isbn": "978-8420471839",
+        "genero": "Novela",
+        "fecha_publicacion": "1963-10-10",
+        "estado": "En reparación"
+    },
+    {
+        "_id": 56789,
+        "titulo": "Ficciones",
+        "autor": "Jorge Luis Borges",
+        "isbn": "978-0802130303",
+        "genero": "Cuentos",
+        "fecha_publicacion": "1944-06-15",
+        "estado": "Disponible"
+    },
+    {
+        "_id": 67890,
+        "titulo": "Pedro Páramo",
+        "autor": "Juan Rulfo",
+        "isbn": "978-0802133908",
+        "genero": "Realismo mágico",
+        "fecha_publicacion": "1955-03-01",
+        "estado": "Prestado"
+    },
+    {
+        "_id": 78901,
+        "titulo": "La casa de los espíritus",
+        "autor": "Isabel Allende",
+        "isbn": "978-0525433477",
+        "genero": "Realismo mágico",
+        "fecha_publicacion": "1982-01-02",
+        "estado": "Disponible"
+    },
+    {
+        "_id": 89012,
+        "titulo": "Sobre héroes y tumbas",
+        "autor": "Ernesto Sabato",
+        "isbn": "978-8432211385",
+        "genero": "Novela",
+        "fecha_publicacion": "1961-09-15",
+        "estado": "Disponible"
+    },
+    {
+        "_id": 90123,
+        "titulo": "La muerte de Artemio Cruz",
+        "autor": "Carlos Fuentes",
+        "isbn": "978-0374531804",
+        "genero": "Novela",
+        "fecha_publicacion": "1962-04-01",
+        "estado": "Prestado"
+    },
+    {
+        "_id": 10234,
+        "titulo": "Conversación en La Catedral",
+        "autor": "Mario Vargas Llosa",
+        "isbn": "978-8420471815",
+        "genero": "Novela",
+        "fecha_publicacion": "1969-05-08",
+        "estado": "Disponible"
+    },
+    {
+        "_id": 11345,
+        "titulo": "El túnel",
+        "autor": "Ernesto Sabato",
+        "isbn": "978-8432211119",
+        "genero": "Novela psicológica",
+        "fecha_publicacion": "1948-06-12",
+        "estado": "En reparación"
+    },
+    {
+        "_id": 12456,
+        "titulo": "La invención de Morel",
+        "autor": "Adolfo Bioy Casares",
+        "isbn": "978-1590170571",
+        "genero": "Ciencia ficción",
+        "fecha_publicacion": "1940-08-20",
+        "estado": "Disponible"
+    },
+    {
+        "_id": 13567,
+        "titulo": "Hopscotch",
+        "autor": "Julio Cortázar",
+        "isbn": "978-0394752846",
+        "genero": "Novela experimental",
+        "fecha_publicacion": "1966-06-28",
+        "estado": "Prestado"
+    },
+    {
+        "_id": 14678,
+        "titulo": "La vorágine",
+        "autor": "José Eustasio Rivera",
+        "isbn": "978-8437605098",
+        "genero": "Novela",
+        "fecha_publicacion": "1924-11-25",
+        "estado": "Disponible"
+    },
+    {
+        "_id": 15789,
+        "titulo": "Yo el Supremo",
+        "autor": "Augusto Roa Bastos",
+        "isbn": "978-8437601519",
+        "genero": "Novela histórica",
+        "fecha_publicacion": "1974-03-15",
+        "estado": "Disponible"
+    },
+    {
+        "_id": 16890,
+        "titulo": "Los detectives salvajes",
+        "autor": "Roberto Bolaño",
+        "isbn": "978-8433969755",
+        "genero": "Novela",
+        "fecha_publicacion": "1998-10-12",
+        "estado": "Prestado"
+    },
+    {
+        "_id": 17901,
+        "titulo": "La región más transparente",
+        "autor": "Carlos Fuentes",
+        "isbn": "978-9681683139",
+        "genero": "Novela",
+        "fecha_publicacion": "1958-03-01",
+        "estado": "Disponible"
+    },
+    {
+        "_id": 18012,
+        "titulo": "Memoria de mis putas tristes",
+        "autor": "Gabriel García Márquez",
+        "isbn": "978-1400095803",
+        "genero": "Novela",
+        "fecha_publicacion": "2004-10-19",
+        "estado": "Disponible"
+    },
+    {
+        "_id": 19123,
+        "titulo": "2666",
+        "autor": "Roberto Bolaño",
+        "isbn": "978-8433969629",
+        "genero": "Novela",
+        "fecha_publicacion": "2004-11-11",
+        "estado": "En reparación"
+    },
+    {
+        "_id": 20234,
+        "titulo": "La ciudad de la furia",
+        "autor": "Ariana Harwicz",
+        "isbn": "978-8433998682",
+        "genero": "Novela",
+        "fecha_publicacion": "2021-03-03",
+        "estado": "Disponible"
     }
 ]

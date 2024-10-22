@@ -30,18 +30,15 @@ const removeClient = (idString) => {
     
 }
 const getAllClients = () => {
-    console.log( ClientSchema.find({  }))
+    return ClientSchema.find({});
 }
 
 const getClientById = (idString) => {
-let id = parseInt(idString)
-     let findClient= ClientSchema.findOne({ _id: id });
-     console.log(findClient);
-     
+    let id = parseInt(idString);
+    return ClientSchema.findOne({ _id: id });
 }
 
 const updateClient =  (dataClient) => {
-    console.log("New client data nnnfffn:", typeof(dataClient));
 
     console.log("data destructurada",dataClient.username);
     console.log("ID:", dataClient.idClient);

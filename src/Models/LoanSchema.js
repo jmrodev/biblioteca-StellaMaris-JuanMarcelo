@@ -1,14 +1,15 @@
+import { date } from "@formkit/tempo";
 import dbLocal from "db-local";
 
-const{Schema} = new dbLocal({ path:"./databases"});
+const { Schema } = new dbLocal({ path: "./databases" });
 
-const LoanSchema = Schema("Loan",{
-    _id: { type: Number, required: true },
-    client_id: { type: String, required: true },
-    book_id: { type: String, required: true },
-    loan_date: { type: Date, required: true },
-    due_date: { type: Date, required: true },
-    return_date: { type: Date, required: false }
+const Loan = Schema("Loan", {
+    _id: { type: Number },
+    client_id: { type: Number, required: true },
+    book_id: { type: Number, required: true },
+    fecha_prestamo: { type: Date },
+    fecha_devolucion: { type: Date },
+    estado: { type: String, default: "activo" }
 });
 
-export default LoanSchema;
+export default Loan;

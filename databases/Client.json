@@ -1,18 +1,162 @@
 [
     {
         "_id": 85107,
-        "name": "frenanda",
-        "email": "rodriguz@gmail.com",
+        "name": "Fernanda Rodriguez",
+        "email": "fernanda.rodriguez@gmail.com",
         "telefono": "2494287029",
-        "direccion": "salta 1961",
+        "direccion": "Salta 1961",
         "fecha_registro": "domingo, 13 de octubre de 2024"
     },
     {
         "_id": 36742,
-        "name": "sf",
-        "email": "sdfg",
-        "telefono": "sdfg",
-        "direccion": "dfsgsdf",
-        "fecha_registro": "domingo, 13 de octubre de 2024"
+        "name": "Carlos Mendoza",
+        "email": "carlos.mendoza@hotmail.com",
+        "telefono": "1156789234",
+        "direccion": "Av. Corrientes 2345",
+        "fecha_registro": "lunes, 14 de octubre de 2024"
+    },
+    {
+        "_id": 92103,
+        "name": "Maria Lopez",
+        "email": "maria.lopez@yahoo.com",
+        "telefono": "3415678901",
+        "direccion": "Belgrano 567",
+        "fecha_registro": "martes, 15 de octubre de 2024"
+    },
+    {
+        "_id": 54321,
+        "name": "Juan Perez",
+        "email": "juan.perez@outlook.com",
+        "telefono": "1198765432",
+        "direccion": "San Martin 789",
+        "fecha_registro": "miércoles, 16 de octubre de 2024"
+    },
+    {
+        "_id": 78901,
+        "name": "Ana Garcia",
+        "email": "ana.garcia@gmail.com",
+        "telefono": "2614567890",
+        "direccion": "Rivadavia 1234",
+        "fecha_registro": "jueves, 17 de octubre de 2024"
+    },
+    {
+        "_id": 23456,
+        "name": "Luis Fernandez",
+        "email": "luis.fernandez@hotmail.com",
+        "telefono": "3517890123",
+        "direccion": "9 de Julio 456",
+        "fecha_registro": "viernes, 18 de octubre de 2024"
+    },
+    {
+        "_id": 67890,
+        "name": "Sofia Martinez",
+        "email": "sofia.martinez@yahoo.com",
+        "telefono": "2235678901",
+        "direccion": "Mitre 789",
+        "fecha_registro": "sábado, 19 de octubre de 2024"
+    },
+    {
+        "_id": 12345,
+        "name": "Diego Sanchez",
+        "email": "diego.sanchez@gmail.com",
+        "telefono": "3814567890",
+        "direccion": "Lavalle 234",
+        "fecha_registro": "domingo, 20 de octubre de 2024"
+    },
+    {
+        "_id": 45678,
+        "name": "Laura Torres",
+        "email": "laura.torres@outlook.com",
+        "telefono": "2994567890",
+        "direccion": "Sarmiento 567",
+        "fecha_registro": "lunes, 21 de octubre de 2024"
+    },
+    {
+        "_id": 89012,
+        "name": "Pablo Gomez",
+        "email": "pablo.gomez@hotmail.com",
+        "telefono": "1145678901",
+        "direccion": "Pueyrredón 890",
+        "fecha_registro": "martes, 22 de octubre de 2024"
+    },
+    {
+        "_id": 34567,
+        "name": "Valentina Diaz",
+        "email": "valentina.diaz@yahoo.com",
+        "telefono": "3514567890",
+        "direccion": "Independencia 123",
+        "fecha_registro": "miércoles, 23 de octubre de 2024"
+    },
+    {
+        "_id": 78901,
+        "name": "Javier Ruiz",
+        "email": "javier.ruiz@gmail.com",
+        "telefono": "2614567890",
+        "direccion": "Alem 456",
+        "fecha_registro": "jueves, 24 de octubre de 2024"
+    },
+    {
+        "_id": 23456,
+        "name": "Camila Herrera",
+        "email": "camila.herrera@outlook.com",
+        "telefono": "1198765432",
+        "direccion": "Urquiza 789",
+        "fecha_registro": "viernes, 25 de octubre de 2024"
+    },
+    {
+        "_id": 67890,
+        "name": "Mateo Castro",
+        "email": "mateo.castro@hotmail.com",
+        "telefono": "3514567890",
+        "direccion": "Pellegrini 234",
+        "fecha_registro": "sábado, 26 de octubre de 2024"
+    },
+    {
+        "_id": 12345,
+        "name": "Lucia Morales",
+        "email": "lucia.morales@yahoo.com",
+        "telefono": "2235678901",
+        "direccion": "Roca 567",
+        "fecha_registro": "domingo, 27 de octubre de 2024"
+    },
+    {
+        "_id": 45678,
+        "name": "Gabriel Ortiz",
+        "email": "gabriel.ortiz@gmail.com",
+        "telefono": "3814567890",
+        "direccion": "Alvear 890",
+        "fecha_registro": "lunes, 28 de octubre de 2024"
+    },
+    {
+        "_id": 89012,
+        "name": "Martina Vargas",
+        "email": "martina.vargas@outlook.com",
+        "telefono": "2994567890",
+        "direccion": "Güemes 123",
+        "fecha_registro": "martes, 29 de octubre de 2024"
+    },
+    {
+        "_id": 34567,
+        "name": "Federico Romero",
+        "email": "federico.romero@hotmail.com",
+        "telefono": "1145678901",
+        "direccion": "Alberdi 456",
+        "fecha_registro": "miércoles, 30 de octubre de 2024"
+    },
+    {
+        "_id": 78901,
+        "name": "Emilia Acosta",
+        "email": "emilia.acosta@yahoo.com",
+        "telefono": "3517890123",
+        "direccion": "Dorrego 789",
+        "fecha_registro": "jueves, 31 de octubre de 2024"
+    },
+    {
+        "_id": 23456,
+        "name": "Tomas Medina",
+        "email": "tomas.medina@gmail.com",
+        "telefono": "2614567890",
+        "direccion": "Moreno 234",
+        "fecha_registro": "viernes, 1 de noviembre de 2024"
     }
 ]
