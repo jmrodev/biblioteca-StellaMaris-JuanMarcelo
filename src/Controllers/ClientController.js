@@ -12,7 +12,7 @@ const createClient = () => {
 
 
     const Client = newClient({
-        useruseruserusername: username,
+        username: username,
         email: email,
         telefono: telefono,
         direccion: direccion,
