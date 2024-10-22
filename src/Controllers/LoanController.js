@@ -29,7 +29,7 @@ const deleteLoan = () => {
 const viewLoans = () => {
     try {
         const loans = getAllLoans();
-        console.log("Lista de préstamos:", loans);
+        console.table(loans);
     } catch (error) {
         console.error("Error al obtener los préstamos:", error.message);
     }

@@ -37,13 +37,14 @@ const deleteBook = () => {
 const viewBooks = () => {
     try {
         const books = getAllBooks();
-        console.table("Lista de libros:", books);
+        console.table( books);
     } catch (error) {
         console.error("Error al obtener los libros:", error.message);
     }
 }
 
 const editBook = () => {
+    
     try {
         let idBook = prompt("Ingrese el id del libro a editar: ");
         let titulo = prompt("Ingrese el título: ");
