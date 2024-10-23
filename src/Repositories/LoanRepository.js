@@ -7,7 +7,9 @@ const newLoan = (dataLoan) => {
     }
 
     const fechaPrestamo = new Date();
-    const fechaDevolucion = (fechaPrestamo.getDate()+ 14); 
+    const fechaDevolucion = 
+
+    fechaDevolucion.setDate(fechaPrestamo.getDate()+ 14); 
 
     const newLoan = Loan.create({
         _id: Math.floor(Math.random() * 100000),
