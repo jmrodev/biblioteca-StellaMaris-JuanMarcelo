@@ -1,8 +1,15 @@
 import prompt from "../utils/prompt.js";
 import { newLoan, getAllLoans, getLoanById, removeLoan, updateLoan } from '../Repositories/LoanRepository.js'
+import { viewClients } from "./ClientController.js";
+import { viewBooks } from "./BookController.js";
 
 const createLoan = () => {
     try {
+
+
+        viewClients()
+        viewBooks()
+
         let client_id = prompt("Ingrese el ID del cliente: ");
         let book_id = prompt("Ingrese el ID del libro: ");
 
