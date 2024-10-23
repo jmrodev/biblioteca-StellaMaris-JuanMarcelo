@@ -35,6 +35,7 @@ const deleteLoan = () => {
 
 const viewLoans = () => {
     try {
+        
         const loans = getAllLoans();
         console.table(loans);
     } catch (error) {

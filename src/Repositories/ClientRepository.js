@@ -1,4 +1,5 @@
 import ClientSchema from '../Models/ClientSchema.js'
+import { getAllLoans } from './LoanRepository.js';
 import { format } from "@formkit/tempo"
 import PromptSync from 'prompt-sync';
 
@@ -27,8 +28,22 @@ const removeClient = (idString) => {
     const deleteClient = ClientSchema.remove({ _id: id })
     console.log("Cliente eliminado", deleteClient);
 
-    
+
 }
+const getAllClientsWithLoans = () => {
+    let clients = getAllClients();
+    let loans = getAllLoans();
+
+    let client = clients.forEach(client => {
+        loans.forEach(loan => {
+            if (loan.client_id === client._id) {
+                return client
+            }
+        })
+    });
+    return client
+}
+
 const getAllClients = () => {
     return ClientSchema.find({});
 }
@@ -38,17 +53,17 @@ const getClientById = (idString) => {
     return ClientSchema.findOne({ _id: id });
 }
 
-const updateClient =  (dataClient) => {
+const updateClient = (dataClient) => {
 
-    console.log("data destructurada",dataClient.username);
+    console.log("data destructurada", dataClient.username);
     console.log("ID:", dataClient.idClient);
     console.log("Username:", dataClient.username);
     console.log("Email:", dataClient.email);
     console.log("Teléfono:", dataClient.telefono);
     console.log("Dirección:", dataClient.direccion);
-    let ID = parseInt(dataClient.idClient) 
+    let ID = parseInt(dataClient.idClient)
     console.log("ID:", ID);
-    const client =  ClientSchema.findOne({ _id: ID});
+    const client = ClientSchema.findOne({ _id: ID });
     prompt("stop")
 
     if (!client) {
@@ -64,4 +79,4 @@ const updateClient =  (dataClient) => {
     return client.save();
 }
 
-export { newClient, removeClient, getAllClients, updateClient, getClientById }
+export { newClient, removeClient, getAllClients, updateClient, getClientById, getAllClientsWithLoans }

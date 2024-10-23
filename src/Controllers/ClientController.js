@@ -1,5 +1,5 @@
 import prompt from "../utils/prompt.js";
-import { newClient, getAllClients, getClientById, removeClient, updateClient } from '../Repositories/ClientRepository.js'
+import { newClient, getAllClients, getClientById, removeClient, updateClient,getAllClientsWithLoans } from '../Repositories/ClientRepository.js'
 import PromptSync from "prompt-sync";
 
 let pause = PromptSync()
@@ -56,6 +56,7 @@ const viewOneClient = () => {
     const buscarId = prompt("buscar id")
     const client = getClientById(buscarId);
     if (client) {
+
         console.table([client]);
     } else {
         console.log("Cliente no encontrado");
@@ -63,5 +64,8 @@ const viewOneClient = () => {
     pause("Presionar una tecla para continuar");
 }
 
-
-export { createClient, deleteClient, viewClients, editClient, viewOneClient }
+const getClientsWithLoans = ()=>{
+    const clients = getAllClientsWithLoans()
+    console.table(clients)
+}
+export { createClient, deleteClient, viewClients, editClient, viewOneClient,getClientsWithLoans }
