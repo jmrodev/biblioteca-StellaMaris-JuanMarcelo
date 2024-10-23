@@ -30,5 +30,85 @@
         "telefono": "1198765432",
         "direccion": "Urquiza 789",
         "fecha_registro": "viernes, 25 de octubre de 2024"
+    },
+    {
+        "_id": 56789,
+        "username": "Carlos Perez",
+        "email": "carlos.perez@gmail.com",
+        "telefono": "3811234567",
+        "direccion": "San Martin 456",
+        "fecha_registro": "lunes, 21 de octubre de 2024"
+    },
+    {
+        "_id": 67890,
+        "username": "Ana Gomez",
+        "email": "ana.gomez@hotmail.com",
+        "telefono": "3812345678",
+        "direccion": "Belgrano 789",
+        "fecha_registro": "martes, 22 de octubre de 2024"
+    },
+    {
+        "_id": 78901,
+        "username": "Jorge Martinez",
+        "email": "jorge.martinez@yahoo.com",
+        "telefono": "3813456789",
+        "direccion": "Rivadavia 101",
+        "fecha_registro": "miércoles, 23 de octubre de 2024"
+    },
+    {
+        "_id": 89012,
+        "username": "Laura Fernandez",
+        "email": "laura.fernandez@outlook.com",
+        "telefono": "3814567890",
+        "direccion": "Mitre 202",
+        "fecha_registro": "jueves, 24 de octubre de 2024"
+    },
+    {
+        "_id": 90123,
+        "username": "Pedro Ramirez",
+        "email": "pedro.ramirez@gmail.com",
+        "telefono": "3815678901",
+        "direccion": "Sarmiento 303",
+        "fecha_registro": "viernes, 25 de octubre de 2024"
+    },
+    {
+        "_id": 123456,
+        "username": "Sofia Lopez",
+        "email": "sofia.lopez@hotmail.com",
+        "telefono": "3816789012",
+        "direccion": "Alsina 404",
+        "fecha_registro": "sábado, 26 de octubre de 2024"
+    },
+    {
+        "_id": 234567,
+        "username": "Miguel Torres",
+        "email": "miguel.torres@yahoo.com",
+        "telefono": "3817890123",
+        "direccion": "Colon 505",
+        "fecha_registro": "domingo, 27 de octubre de 2024"
+    },
+    {
+        "_id": 345678,
+        "username": "Lucia Morales",
+        "email": "lucia.morales@outlook.com",
+        "telefono": "3818901234",
+        "direccion": "Saavedra 606",
+        "fecha_registro": "lunes, 28 de octubre de 2024"
+    },
+    {
+        "_id": 456789,
+        "username": "Juan Garcia",
+        "email": "juan.garcia@gmail.com",
+        "telefono": "3819012345",
+        "direccion": "Laprida 707",
+        "fecha_registro": "martes, 29 de octubre de 2024"
+    },
+    {
+        "_id": 567890,
+        "username": "Mariana Ruiz",
+        "email": "mariana.ruiz@hotmail.com",
+        "telefono": "3810123456",
+        "direccion": "Balcarce 808",
+        "fecha_registro": "miércoles, 30 de octubre de 2024"
     }
 ]

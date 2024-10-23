@@ -1,5 +1,5 @@
 import prompt from "../utils/prompt.js";
-import { newClient, getAllClients, getClientById, removeClient, updateClient,getAllClientsWithLoans } from '../Repositories/ClientRepository.js'
+import { newClient, getAllClients, getClientById, removeClient, updateClient } from '../Repositories/ClientRepository.js'
 import PromptSync from "prompt-sync";
 
 let pause = PromptSync()
@@ -31,25 +31,25 @@ const viewClients = () => {
     pause("Presionar una tecla para continuar");
 }
 
-const editClient =  () => {
-  
-        let idClient = prompt("Ingrese el id del cliente a editar")
-        let username = prompt("Ingrese el nombre")
-        let email = prompt("Ingrese email")
-        let telefono = prompt("Ingrese el telefono")
-        let direccion = prompt("Ingrese la direccion")
+const editClient = () => {
 
-        const dataClient =  updateClient({
-            idClient,
-            username,
-            email,
-            telefono,
-            direccion
-        });
+    let idClient = prompt("Ingrese el id del cliente a editar")
+    let username = prompt("Ingrese el nombre")
+    let email = prompt("Ingrese email")
+    let telefono = prompt("Ingrese el telefono")
+    let direccion = prompt("Ingrese la direccion")
 
-        console.table("cliente editado",dataClient);
-        prompt("Presione Enter para continuar........");
-        
+    const dataClient = updateClient({
+        idClient,
+        username,
+        email,
+        telefono,
+        direccion
+    });
+
+    console.table("cliente editado", dataClient);
+    prompt("Presione Enter para continuar........");
+
 }
 
 const viewOneClient = () => {
@@ -64,8 +64,5 @@ const viewOneClient = () => {
     pause("Presionar una tecla para continuar");
 }
 
-const getClientsWithLoans = ()=>{
-    const clients = getAllClientsWithLoans()
-    console.table(clients)
-}
-export { createClient, deleteClient, viewClients, editClient, viewOneClient,getClientsWithLoans }
+
+export { createClient, deleteClient, viewClients, editClient, viewOneClient}

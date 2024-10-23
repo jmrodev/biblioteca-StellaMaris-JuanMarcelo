@@ -1,5 +1,4 @@
 import ClientSchema from '../Models/ClientSchema.js'
-import { getAllLoans } from './LoanRepository.js';
 import { format } from "@formkit/tempo"
 import PromptSync from 'prompt-sync';
 
@@ -29,19 +28,6 @@ const removeClient = (idString) => {
     console.log("Cliente eliminado", deleteClient);
 
 
-}
-const getAllClientsWithLoans = () => {
-    let clients = getAllClients();
-    let loans = getAllLoans();
-
-    let client = clients.forEach(client => {
-        loans.forEach(loan => {
-            if (loan.client_id === client._id) {
-                return client
-            }
-        })
-    });
-    return client
 }
 
 const getAllClients = () => {
@@ -79,4 +65,4 @@ const updateClient = (dataClient) => {
     return client.save();
 }
 
-export { newClient, removeClient, getAllClients, updateClient, getClientById, getAllClientsWithLoans }
+export { newClient, removeClient, getAllClients, updateClient, getClientById}

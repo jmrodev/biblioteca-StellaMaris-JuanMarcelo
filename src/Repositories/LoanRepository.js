@@ -1,4 +1,6 @@
 import Loan from '../Models/LoanSchema.js'
+import { getAllClients } from './ClientRepository.js';
+import { getAllBooks } from './BookRepository.js';
 import { format} from "@formkit/tempo"
 
 const newLoan = (dataLoan) => {
@@ -29,7 +31,27 @@ const removeLoan = (id) => {
 }
 
 const getAllLoans = () => {
-    return Loan.find({});
+
+    let Clients = getAllClients()
+    let Books = getAllBooks()
+    const loans = Loan.find({});
+
+    const loansWithDetails = loans.map(loan => {
+        const client = Clients.find(client => client._id === loan.client_id);
+        const book = Books.find(book => book._id === loan.book_id);
+
+        return {
+            ...loan._doc,
+            client_name: client ? client.username : "Cliente no encontrado",
+            book_title: book ? book.titulo : "Libro no encontrado",
+            F_prestamo: loan.fecha_prestamo,
+            F_devolucion: loan.fecha_devolucion
+
+        };
+    });
+
+    return loansWithDetails
+    
 }
 
 const getLoanById = (id) => {

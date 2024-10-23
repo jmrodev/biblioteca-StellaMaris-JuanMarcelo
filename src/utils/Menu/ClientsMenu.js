@@ -1,6 +1,6 @@
 import prompt from "../prompt.js";
 import mainMenu from "./MainMenu.js";
-import { createClient, deleteClient, viewClients, editClient, viewOneClient, getClientsWithLoans } from "../../Controllers/ClientController.js";
+import { createClient, deleteClient, viewClients, editClient, viewOneClient } from "../../Controllers/ClientController.js";
 
 const clientsMenu = () => {
     // //console.clear();
