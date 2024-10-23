@@ -29,6 +29,7 @@
   "homepage": "https://github.com/jmrodev/biblioteca-StellaMaris-JuanMarcelo#readme",
   "dependencies": {
     "@formkit/tempo": "^0.1.2",
+    "chalk": "^5.3.0",
     "db-local": "^3.1.0",
     "prompt-sync": "^4.2.0"
   }

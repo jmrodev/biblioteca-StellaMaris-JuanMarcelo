@@ -11,7 +11,7 @@ const newClient = (dataClient) => {
     }
 
     const newClient = ClientSchema.create({
-        _id: Math.floor(Math.random() * 100000), // Usa timestamp como ID único
+        _id: Math.floor(Math.random() * 100000), 
         username: dataClient.username,
         email: dataClient.email,
         telefono: dataClient.telefono,
