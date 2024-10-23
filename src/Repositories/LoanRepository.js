@@ -7,7 +7,7 @@ const newLoan = (dataLoan) => {
     }
 
     const fechaPrestamo = new Date();
-    const fechaDevolucion = 
+    const fechaDevolucion = new Date();
 
     fechaDevolucion.setDate(fechaPrestamo.getDate()+ 14); 
 
@@ -20,7 +20,7 @@ const newLoan = (dataLoan) => {
         estado: "activo"
     });
 
-    return newLoan;
+    return newLoan.save();
 }
 
 const removeLoan = (id) => {
