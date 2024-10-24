@@ -1,5 +1,5 @@
 import prompt from "../utils/prompt.js";
-import { newClient, getAllClients, getClientById, removeClient, updateClient } from '../Repositories/ClientRepository.js'
+import { createNewClient, getAllClients, getClientById, removeClient, updateClient } from '../Repositories/ClientRepository.js'
 import PromptSync from "prompt-sync";
 
 let pause = PromptSync()
@@ -7,24 +7,24 @@ let pause = PromptSync()
 const createClient = () => {
     let username = prompt("Ingrese el nombre")
     let email = prompt("Ingrese email")
-    let telefono = prompt("Ingrese el telefono")
-    let direccion = prompt("Ingrese la direccion")
+    let phone = prompt("Ingrese el teléfono")
+    let address = prompt("Ingrese la dirección")
 
-
-    const Client = newClient({
-        username: username,
-        email: email,
-        telefono: telefono,
-        direccion: direccion,
+    const client = createNewClient({
+        username,
+        email,
+        phone,
+        address,
     })
-    console.log("Cliente creado exitosamente", Client)
-    pause("Presionar  una tecla para continuar")
+    console.log("Cliente creado exitosamente", client)
+    pause("Presionar una tecla para continuar")
 }
 
 const deleteClient = () => {
-    const idClient = prompt("Eliminar un Cliente, ingrese el id")
-    removeClient(idClient);
+    const clientId = prompt("Eliminar un Cliente, ingrese el id")
+    removeClient(clientId);
 }
+
 const viewClients = () => {
     const clients = getAllClients();
     console.table(clients);
@@ -32,31 +32,28 @@ const viewClients = () => {
 }
 
 const editClient = () => {
-
-    let idClient = prompt("Ingrese el id del cliente a editar")
+    let clientId = prompt("Ingrese el id del cliente a editar")
     let username = prompt("Ingrese el nombre")
     let email = prompt("Ingrese email")
-    let telefono = prompt("Ingrese el telefono")
-    let direccion = prompt("Ingrese la direccion")
+    let phone = prompt("Ingrese el teléfono")
+    let address = prompt("Ingrese la dirección")
 
-    const dataClient = updateClient({
-        idClient,
+    const updatedClient = updateClient({
+        clientId,
         username,
         email,
-        telefono,
-        direccion
+        phone,
+        address
     });
 
-    console.table("cliente editado", dataClient);
+    console.table("Cliente editado", updatedClient);
     prompt("Presione Enter para continuar........");
-
 }
 
 const viewOneClient = () => {
-    const buscarId = prompt("buscar id")
-    const client = getClientById(buscarId);
+    const searchId = prompt("Buscar id")
+    const client = getClientById(searchId);
     if (client) {
-
         console.table([client]);
     } else {
         console.log("Cliente no encontrado");
@@ -64,5 +61,4 @@ const viewOneClient = () => {
     pause("Presionar una tecla para continuar");
 }
 
-
-export { createClient, deleteClient, viewClients, editClient, viewOneClient}
+export { createClient, deleteClient, viewClients, editClient, viewOneClient }

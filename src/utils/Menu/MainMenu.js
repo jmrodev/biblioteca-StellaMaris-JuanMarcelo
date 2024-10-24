@@ -8,9 +8,8 @@ const mainMenu = async () => {
     let option = 1
     
     while (option !== 0) {
-        // console.clear()
         option = parseInt(
-            prompt("Select an option: \n 1.manage clients \n 2.manage books \n 3.manage loans \n 4.Test \n 0.Exit \n\n\n"
+            prompt("Seleccione una opción: \n 1.Gestionar clientes \n 2.Gestionar libros \n 3.Gestionar préstamos \n 4.Prueba \n 0.Salir \n\n\n"
             ))
         switch (option) {
             case 1:
@@ -25,16 +24,17 @@ const mainMenu = async () => {
             case 4:
                 try {
                     const result = await test();
-                    console.log('Test result:', result);
+                    console.log('Resultado de la prueba:', result);
                 } catch (error) {
-                    console.error('Error in test:', error);
+                    console.error('Error en la prueba:', error);
                 }
                 break;
             default:
                 if (option !== 0) {
-                    console.log("Invalid option, please enter another option");
-                } 
-                console.log("Goodbye");
+                    console.log("Opción inválida, por favor ingrese otra opción");
+                } else {
+                    console.log("Adiós");
+                }
                 break;
         }
     }

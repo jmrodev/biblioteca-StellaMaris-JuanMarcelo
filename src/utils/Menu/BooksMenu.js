@@ -5,7 +5,7 @@ import { createBook, deleteBook, viewBooks, editBook, viewOneBook } from "../../
 const booksMenu = () => {
     console.clear();
     let option = prompt(
-        "Seleccione una opción: \n 1.Crear un libro \n 2.Leer un libro \n 3.Editar un libro \n 4.Eliminar un libro \n 5.Ver lista de libros \n 6.Volver al menú principal \n\n\n "
+        "Seleccione una opción: \n 1.Crear un libro \n 2.Ver un libro \n 3.Editar un libro \n 4.Eliminar un libro \n 5.Ver lista de libros \n 6.Volver al menú principal \n\n\n "
     );
     
     switch (Number(option)) {

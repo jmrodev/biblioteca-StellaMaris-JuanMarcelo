@@ -1,26 +1,26 @@
 import Book from '../Models/BookSchema.js'
 
-const newBook = (dataBook) => {
-    if (!dataBook.titulo || !dataBook.autor || !dataBook.isbn || !dataBook.genero || !dataBook.fecha_publicacion) {
+const createNewBook = (bookData) => {
+    if (!bookData.title || !bookData.author || !bookData.isbn || !bookData.genre || !bookData.publicationDate) {
         throw new Error("Todos los campos son obligatorios");
     }
 
     const newBook = Book.create({
         _id: Math.floor(Math.random() * 100000),
-        titulo: dataBook.titulo,
-        autor: dataBook.autor,
-        isbn: dataBook.isbn,
-        genero: dataBook.genero,
-        fecha_publicacion: dataBook.fecha_publicacion,
-        estado: dataBook.estado || "disponible"
+        title: bookData.title,
+        author: bookData.author,
+        isbn: bookData.isbn,
+        genre: bookData.genre,
+        publicationDate: bookData.publicationDate,
+        status: bookData.status || "available"
     });
 
     return newBook;
 }
 
 const removeBook = (id) => {
-    const deleteBook = Book.remove({ _id: parseInt(id) });
-    return deleteBook;
+    const deletedBook = Book.remove({ _id: parseInt(id) });
+    return deletedBook;
 }
 
 const getAllBooks = () => {
@@ -31,21 +31,21 @@ const getBookById = (id) => {
     return Book.findOne({ _id: parseInt(id) });
 }
 
-const updateBook = (dataBook) => {
-    const book = Book.findOne({ _id: parseInt(dataBook.idBook) });
+const updateBook = (bookData) => {
+    const book = Book.findOne({ _id: parseInt(bookData.bookId) });
 
     if (!book) {
         throw new Error("Libro no encontrado");
     }
 
-    book.titulo = dataBook.titulo;
-    book.autor = dataBook.autor;
-    book.isbn = dataBook.isbn;
-    book.genero = dataBook.genero;
-    book.fecha_publicacion = dataBook.fecha_publicacion;
-    book.estado = dataBook.estado;
+    book.title = bookData.title;
+    book.author = bookData.author;
+    book.isbn = bookData.isbn;
+    book.genre = bookData.genre;
+    book.publicationDate = bookData.publicationDate;
+    book.status = bookData.status;
 
     return book.save();
 }
 
-export { newBook, removeBook, getAllBooks, updateBook, getBookById }
+export { createNewBook, removeBook, getAllBooks, updateBook, getBookById }
