@@ -15,7 +15,7 @@ const createNewBook = (bookData) => {
         status: bookData.status || "available"
     });
 
-    return newBook;
+    return newBook.save();
 }
 
 const removeBook = (id) => {

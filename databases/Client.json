@@ -1,114 +1,130 @@
 [
     {
+        "_id": 61006,
+        "username": "lucas",
+        "email": "lucasmail",
+        "phone": "1234",
+        "address": "salta la pala 3",
+        "registrationDate": "jueves, 24 de octubre de 2024"
+    },
+    {
+        "_id": 14949,
+        "username": "er",
+        "email": "er",
+        "phone": "er",
+        "address": "er",
+        "registrationDate": "jueves, 24 de octubre de 2024"
+    },
+    {
         "_id": 12345,
         "username": "Diego Sanchez",
         "email": "diego.sanchez@gmail.com",
-        "telefono": "3814567890",
-        "direccion": "Lavalle 234",
-        "fecha_registro": "domingo, 20 de octubre de 2024"
+        "phone": "3814567890",
+        "address": "Lavalle 234",
+        "registrationDate": "domingo, 20 de octubre de 2024"
     },
     {
         "_id": 23456,
         "username": "Luis Lomo",
         "email": "lomo@email.com",
-        "telefono": "1235476453576",
-        "direccion": "SAlata la pala 12",
-        "fecha_registro": "viernes, 18 de octubre de 2024"
+        "phone": "1235476453576",
+        "address": "SAlata la pala 12",
+        "registrationDate": "viernes, 18 de octubre de 2024"
     },
     {
         "_id": 34567,
         "username": "Valentina Diaz",
         "email": "valentina.diaz@yahoo.com",
-        "telefono": "3514567890",
-        "direccion": "Independencia 123",
-        "fecha_registro": "miércoles, 23 de octubre de 2024"
+        "phone": "3514567890",
+        "address": "Independencia 123",
+        "registrationDate": "miércoles, 23 de octubre de 2024"
     },
     {
         "_id": 45678,
         "username": "Camila Herrera",
         "email": "camila.herrera@outlook.com",
-        "telefono": "1198765432",
-        "direccion": "Urquiza 789",
-        "fecha_registro": "viernes, 25 de octubre de 2024"
+        "phone": "1198765432",
+        "address": "Urquiza 789",
+        "registrationDate": "viernes, 25 de octubre de 2024"
     },
     {
         "_id": 56789,
         "username": "Carlos Perez",
         "email": "carlos.perez@gmail.com",
-        "telefono": "3811234567",
-        "direccion": "San Martin 456",
-        "fecha_registro": "lunes, 21 de octubre de 2024"
+        "phone": "3811234567",
+        "address": "San Martin 456",
+        "registrationDate": "lunes, 21 de octubre de 2024"
     },
     {
         "_id": 67890,
         "username": "Ana Gomez",
         "email": "ana.gomez@hotmail.com",
-        "telefono": "3812345678",
-        "direccion": "Belgrano 789",
-        "fecha_registro": "martes, 22 de octubre de 2024"
+        "phone": "3812345678",
+        "address": "Belgrano 789",
+        "registrationDate": "martes, 22 de octubre de 2024"
     },
     {
         "_id": 78901,
         "username": "Jorge Martinez",
         "email": "jorge.martinez@yahoo.com",
-        "telefono": "3813456789",
-        "direccion": "Rivadavia 101",
-        "fecha_registro": "miércoles, 23 de octubre de 2024"
+        "phone": "3813456789",
+        "address": "Rivadavia 101",
+        "registrationDate": "miércoles, 23 de octubre de 2024"
     },
     {
         "_id": 89012,
         "username": "Laura Fernandez",
         "email": "laura.fernandez@outlook.com",
-        "telefono": "3814567890",
-        "direccion": "Mitre 202",
-        "fecha_registro": "jueves, 24 de octubre de 2024"
+        "phone": "3814567890",
+        "address": "Mitre 202",
+        "registrationDate": "jueves, 24 de octubre de 2024"
     },
     {
         "_id": 90123,
         "username": "Pedro Ramirez",
         "email": "pedro.ramirez@gmail.com",
-        "telefono": "3815678901",
-        "direccion": "Sarmiento 303",
-        "fecha_registro": "viernes, 25 de octubre de 2024"
+        "phone": "3815678901",
+        "address": "Sarmiento 303",
+        "registrationDate": "viernes, 25 de octubre de 2024"
     },
     {
         "_id": 123456,
         "username": "Sofia Lopez",
         "email": "sofia.lopez@hotmail.com",
-        "telefono": "3816789012",
-        "direccion": "Alsina 404",
-        "fecha_registro": "sábado, 26 de octubre de 2024"
+        "phone": "3816789012",
+        "address": "Alsina 404",
+        "registrationDate": "sábado, 26 de octubre de 2024"
     },
     {
         "_id": 234567,
         "username": "Miguel Torres",
         "email": "miguel.torres@yahoo.com",
-        "telefono": "3817890123",
-        "direccion": "Colon 505",
-        "fecha_registro": "domingo, 27 de octubre de 2024"
+        "phone": "3817890123",
+        "address": "Colon 505",
+        "registrationDate": "domingo, 27 de octubre de 2024"
     },
     {
         "_id": 345678,
         "username": "Lucia Morales",
         "email": "lucia.morales@outlook.com",
-        "telefono": "3818901234",
-        "direccion": "Saavedra 606",
-        "fecha_registro": "lunes, 28 de octubre de 2024"
+        "phone": "3818901234",
+        "address": "Saavedra 606",
+        "registrationDate": "lunes, 28 de octubre de 2024"
     },
     {
         "_id": 456789,
         "username": "Juan Garcia",
         "email": "juan.garcia@gmail.com",
-        "telefono": "3819012345",
-        "direccion": "Laprida 707",
-        "fecha_registro": "martes, 29 de octubre de 2024"
+        "phone": "3819012345",
+        "address": "Laprida 707",
+        "registrationDate": "martes, 29 de octubre de 2024"
     },
     {
         "_id": 567890,
         "username": "Mariana Ruiz",
         "email": "mariana.ruiz@hotmail.com",
-        "telefono": "3810123456",
-        "direccion": "Balcarce 808",
-        "fecha_registro": "miércoles, 30 de octubre de 2024"
+        "phone": "3810123456",
+        "address": "Balcarce 808",
+        "registrationDate": "miércoles, 30 de octubre de 2024"
     }
 ]

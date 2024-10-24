@@ -11,11 +11,13 @@ const createNewLoan = (loanData) => {
         clientId: parseInt(loanData.clientId),
         bookId: parseInt(loanData.bookId),
         loanDate: format(new Date(), "full"),
-        returnDate: null,
+        returnDate: format(addDay(new Date(),10),"full"),
         status: "active"
     });
 
-    return newLoan;
+    console.log(newLoan);
+    
+    return newLoan.save();
 }
 
 const removeLoan = (id) => {

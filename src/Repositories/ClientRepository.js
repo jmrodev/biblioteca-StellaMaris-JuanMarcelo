@@ -15,7 +15,7 @@ const createNewClient = (clientData) => {
         registrationDate: format(new Date(), "full")
     });
 
-    return newClient;
+    return newClient.save();
 }
 
 const removeClient = (id) => {
