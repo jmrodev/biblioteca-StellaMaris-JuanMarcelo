@@ -8,17 +8,17 @@ const newLoan = (dataLoan) => {
         throw new Error("ID del cliente y del libro son obligatorios");
     }
 
-    const fechaPrestamo = new Date();
-    const fechaDevolucion = new Date();
+    const loanDate = new Date();
+    const returnDate = new Date();
 
-    fechaDevolucion.setDate(fechaPrestamo.getDate()+ 14); 
+    returnDate.setDate(loanDate.getDate()+ 14); 
 
     const newLoan = Loan.create({
         _id: Math.floor(Math.random() * 100000),
         client_id: parseInt(dataLoan.client_id),
         book_id: parseInt(dataLoan.book_id),
-        fecha_prestamo: format(fechaPrestamo, "full"),
-        fecha_devolucion: format(fechaDevolucion, "full"),
+        fecha_prestamo: format(loanDate, "full"),
+        fecha_devolucion: format(returnDate, "full"),
         estado: "activo"
     });
 
@@ -42,11 +42,11 @@ const getAllLoans = () => {
 
         return {
             ...loan._doc,
-            id: loan._id,
-            client_name: client ? client.username : "Cliente no encontrado",
-            book_title: book ? book.titulo : "Libro no encontrado",
-            F_prestamo: loan.fecha_prestamo,
-            F_devolucion: loan.fecha_devolucion
+            id_prestamo: loan._id,
+            Nombre_Usuario: client ? client.username : "Cliente no encontrado",
+            Titulo_libro: book ? book.titulo : "Libro no encontrado",
+            Fecha_prestamo: loan.fecha_prestamo,
+            Fecha_devolucion: loan.fecha_devolucion
 
         };
     });
