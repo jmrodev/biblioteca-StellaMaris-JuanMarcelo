@@ -1,0 +1,106 @@
+[
+    {
+        "_id": 41710,
+        "client_id": 12345,
+        "book_id": 23456,
+        "fecha_prestamo": "martes, 22 de octubre de 2024",
+        "fecha_devolucion": "martes, 5 de noviembre de 2024",
+        "estado": "Activo"
+    },
+    {
+        "_id": 37200,
+        "client_id": 12345,
+        "book_id": 12345,
+        "fecha_prestamo": "martes, 22 de octubre de 2024",
+        "fecha_devolucion": "martes, 5 de noviembre de 2024",
+        "estado": "Activo"
+    },
+    {
+        "_id": 1001,
+        "client_id": 23456,
+        "book_id": 34567,
+        "fecha_prestamo": "martes, 15 de octubre de 2024",
+        "fecha_devolucion": "martes, 29 de octubre de 2024",
+        "estado": "Activo"
+    },
+    {
+        "_id": 1002,
+        "client_id": 34567,
+        "book_id": 45678,
+        "fecha_prestamo": "miércoles, 16 de octubre de 2024",
+        "fecha_devolucion": "miércoles, 30 de octubre de 2024",
+        "estado": "Activo"
+    },
+    {
+        "_id": 1003,
+        "client_id": 45678,
+        "book_id": 56789,
+        "fecha_prestamo": "jueves, 17 de octubre de 2024",
+        "fecha_devolucion": "jueves, 31 de octubre de 2024",
+        "estado": "Activo"
+    },
+    {
+        "_id": 1004,
+        "client_id": 56789,
+        "book_id": 67890,
+        "fecha_prestamo": "viernes, 18 de octubre de 2024",
+        "fecha_devolucion": "viernes, 1 de noviembre de 2024",
+        "estado": "Activo"
+    },
+    {
+        "_id": 1005,
+        "client_id": 67890,
+        "book_id": 78901,
+        "fecha_prestamo": "sábado, 19 de octubre de 2024",
+        "fecha_devolucion": "sábado, 2 de noviembre de 2024",
+        "estado": "Activo"
+    },
+    {
+        "_id": 1006,
+        "client_id": 78901,
+        "book_id": 89012,
+        "fecha_prestamo": "domingo, 20 de octubre de 2024",
+        "fecha_devolucion": "domingo, 3 de noviembre de 2024",
+        "estado": "Activo"
+    },
+    {
+        "_id": 1007,
+        "client_id": 89012,
+        "book_id": 90123,
+        "fecha_prestamo": "lunes, 21 de octubre de 2024",
+        "fecha_devolucion": "lunes, 4 de noviembre de 2024",
+        "estado": "Activo"
+    },
+    {
+        "_id": 1008,
+        "client_id": 123456,
+        "book_id": 123456,
+        "fecha_prestamo": "martes, 22 de octubre de 2024",
+        "fecha_devolucion": "martes, 5 de noviembre de 2024",
+        "estado": "Activo"
+    },
+    {
+        "_id": 1009,
+        "client_id": 123456,
+        "book_id": 23456,
+        "fecha_prestamo": "miércoles, 23 de octubre de 2024",
+        "fecha_devolucion": "miércoles, 6 de noviembre de 2024",
+        "estado": "Activo"
+    },
+    {
+        "_id": 1010,
+        "client_id": 56789,
+        "book_id": 123456,
+        "fecha_prestamo": "jueves, 24 de octubre de 2024",
+        "fecha_devolucion": "2024-02-05",
+        "estado": "activo"
+    },
+    {
+        "_id": 1011,
+        "client_id": 34567,
+        "book_id": 23456,
+        "fecha_prestamo": "viernes, 25 de octubre de 2024",
+        "fecha_devolucion": "viernes, 8 de noviembre de 2024",
+        "estado": "Activo"
+    }
+]

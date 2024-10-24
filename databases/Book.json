@@ -1,0 +1,137 @@
+[
+    {
+        "_id": 12345,
+        "titulo": "Cien años de soledad",
+        "autor": "Gabriel García Márquez",
+        "isbn": "978-0307474728",
+        "genero": "Realismo mágico",
+        "fecha_publicacion": "1967-05-30",
+        "estado": "Disponible"
+    },
+    {
+        "_id": 23456,
+        "titulo": "El Aleph",
+        "autor": "Jorge Luis Borges",
+        "isbn": "978-0142437883",
+        "genero": "Ficción",
+        "fecha_publicacion": "1949-06-15",
+        "estado": "Prestado"
+    },
+    {
+        "_id": 34567,
+        "titulo": "Rayuela",
+        "autor": "Julio Cortázar",
+        "isbn": "978-8437604572",
+        "genero": "Novela experimental",
+        "fecha_publicacion": "1963-06-28",
+        "estado": "Disponible"
+    },
+    {
+        "_id": 45678,
+        "titulo": "La ciudad y los perros",
+        "autor": "Mario Vargas Llosa",
+        "isbn": "978-8420471839",
+        "genero": "Novela",
+        "fecha_publicacion": "1963-10-10",
+        "estado": "En reparación"
+    },
+    {
+        "_id": 56789,
+        "titulo": "La casa de los espíritus",
+        "autor": "Isabel Allende",
+        "isbn": "978-0307474728",
+        "genero": "Realismo mágico",
+        "fecha_publicacion": "1982-06-15",
+        "estado": "Disponible"
+    },
+    {
+        "_id": 67890,
+        "titulo": "Don Quijote de la Mancha",
+        "autor": "Miguel de Cervantes",
+        "isbn": "978-0060934347",
+        "genero": "Novela",
+        "fecha_publicacion": "1605-01-16",
+        "estado": "Disponible"
+    },
+    {
+        "_id": 78901,
+        "titulo": "Pedro Páramo",
+        "autor": "Juan Rulfo",
+        "isbn": "978-8420471839",
+        "genero": "Realismo mágico",
+        "fecha_publicacion": "1955-03-19",
+        "estado": "Disponible"
+    },
+    {
+        "_id": 89012,
+        "titulo": "Ficciones",
+        "autor": "Jorge Luis Borges",
+        "isbn": "978-8420471839",
+        "genero": "Ficción",
+        "fecha_publicacion": "1944-01-01",
+        "estado": "Disponible"
+    },
+    {
+        "_id": 90123,
+        "titulo": "El amor en los tiempos del cólera",
+        "autor": "Gabriel García Márquez",
+        "isbn": "978-0307389732",
+        "genero": "Realismo mágico",
+        "fecha_publicacion": "1985-09-05",
+        "estado": "Disponible"
+    },
+    {
+        "_id": 123456,
+        "titulo": "La sombra del viento",
+        "autor": "Carlos Ruiz Zafón",
+        "isbn": "978-0143034906",
+        "genero": "Misterio",
+        "fecha_publicacion": "2001-04-12",
+        "estado": "Disponible"
+    },
+    {
+        "_id": 234567,
+        "titulo": "El túnel",
+        "autor": "Ernesto Sabato",
+        "isbn": "978-8437604572",
+        "genero": "Novela psicológica",
+        "fecha_publicacion": "1948-06-01",
+        "estado": "Disponible"
+    },
+    {
+        "_id": 345678,
+        "titulo": "La tregua",
+        "autor": "Mario Benedetti",
+        "isbn": "978-8420471839",
+        "genero": "Novela",
+        "fecha_publicacion": "1960-03-01",
+        "estado": "Disponible"
+    },
+    {
+        "_id": 456789,
+        "titulo": "Sobre héroes y tumbas",
+        "autor": "Ernesto Sabato",
+        "isbn": "978-8437604572",
+        "genero": "Novela",
+        "fecha_publicacion": "1961-01-01",
+        "estado": "Disponible"
+    },
+    {
+        "_id": 567890,
+        "titulo": "La invención de Morel",
+        "autor": "Adolfo Bioy Casares",
+        "isbn": "978-8437604572",
+        "genero": "Ciencia ficción",
+        "fecha_publicacion": "1940-01-01",
+        "estado": "Disponible"
+    },
+    {
+        "_id": 678901,
+        "titulo": "El coronel no tiene quien le escriba",
+        "autor": "Gabriel García Márquez",
+        "isbn": "978-0307474728",
+        "genero": "Realismo mágico",
+        "fecha_publicacion": "1961-01-01",
+        "estado": "Disponible"
+    }
+]
