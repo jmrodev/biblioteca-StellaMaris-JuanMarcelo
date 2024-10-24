@@ -1,22 +1,22 @@
 import prompt from "../utils/prompt.js";
-import { newBook, getAllBooks, getBookById, removeBook, updateBook } from '../Repositories/BookRepository.js'
+import { createNewBook, getAllBooks, getBookById, removeBook, updateBook } from '../Repositories/BookRepository.js'
 
 const createBook = () => {
     try {
-        let titulo = prompt("Ingrese el título: ");
-        let autor = prompt("Ingrese el autor: ");
+        let title = prompt("Ingrese el título: ");
+        let author = prompt("Ingrese el autor: ");
         let isbn = prompt("Ingrese el ISBN: ");
-        let genero = prompt("Ingrese el género: ");
-        let fecha_publicacion = prompt("Ingrese la fecha de publicación: ");
-        let estado = prompt("Ingrese el estado (disponible/prestado): ");
+        let genre = prompt("Ingrese el género: ");
+        let publicationDate = prompt("Ingrese la fecha de publicación: ");
+        let status = prompt("Ingrese el estado (disponible/prestado): ");
 
-        const book = newBook({
-            titulo,
-            autor,
+        const book = createNewBook({
+            title,
+            author,
             isbn,
-            genero,
-            fecha_publicacion,
-            estado
+            genre,
+            publicationDate,
+            status
         });
         console.log("Libro creado exitosamente", book);
     } catch (error) {
@@ -26,8 +26,8 @@ const createBook = () => {
 
 const deleteBook = () => {
     try {
-        const idBook = prompt("Eliminar un Libro, ingrese el id: ");
-        const result = removeBook(idBook);
+        const bookId = prompt("Eliminar un Libro, ingrese el id: ");
+        const result = removeBook(bookId);
         console.log("Libro eliminado", result);
     } catch (error) {
         console.error("Error al eliminar el libro:", error.message);
@@ -37,34 +37,33 @@ const deleteBook = () => {
 const viewBooks = () => {
     try {
         const books = getAllBooks();
-        console.table( books);
+        console.table(books);
     } catch (error) {
         console.error("Error al obtener los libros:", error.message);
     }
 }
 
 const editBook = () => {
-    
     try {
-        let idBook = prompt("Ingrese el id del libro a editar: ");
-        let titulo = prompt("Ingrese el título: ");
-        let autor = prompt("Ingrese el autor: ");
+        let bookId = prompt("Ingrese el id del libro a editar: ");
+        let title = prompt("Ingrese el título: ");
+        let author = prompt("Ingrese el autor: ");
         let isbn = prompt("Ingrese el ISBN: ");
-        let genero = prompt("Ingrese el género: ");
-        let fecha_publicacion = prompt("Ingrese la fecha de publicación: ");
-        let estado = prompt("Ingrese el estado (disponible/prestado): ");
+        let genre = prompt("Ingrese el género: ");
+        let publicationDate = prompt("Ingrese la fecha de publicación: ");
+        let status = prompt("Ingrese el estado (disponible/prestado): ");
 
-        const dataBook = updateBook({
-            idBook,
-            titulo,
-            autor,
+        const updatedBook = updateBook({
+            bookId,
+            title,
+            author,
             isbn,
-            genero,
-            fecha_publicacion,
-            estado
+            genre,
+            publicationDate,
+            status
         });
 
-        console.log("Libro editado", dataBook);
+        console.log("Libro editado", updatedBook);
     } catch (error) {
         console.error("Error al editar el libro:", error.message);
     }
@@ -72,8 +71,8 @@ const editBook = () => {
 
 const viewOneBook = () => {
     try {
-        const buscarId = prompt("Buscar id: ");
-        const book = getBookById(buscarId);
+        const searchId = prompt("Buscar id: ");
+        const book = getBookById(searchId);
         console.log("Libro encontrado:", book);
     } catch (error) {
         console.error("Error al buscar el libro:", error.message);

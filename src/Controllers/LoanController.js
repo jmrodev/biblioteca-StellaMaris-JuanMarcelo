@@ -1,21 +1,19 @@
 import prompt from "../utils/prompt.js";
-import { newLoan, getAllLoans, getLoanById, removeLoan, updateLoan } from '../Repositories/LoanRepository.js'
+import { createNewLoan, getAllLoans, getLoanById, removeLoan, updateLoan } from '../Repositories/LoanRepository.js'
 import { viewClients } from "./ClientController.js";
 import { viewBooks } from "./BookController.js";
 
 const createLoan = () => {
     try {
-
-
         viewClients()
         viewBooks()
 
-        let client_id = prompt("Ingrese el ID del cliente: ");
-        let book_id = prompt("Ingrese el ID del libro: ");
+        let clientId = prompt("Ingrese el ID del cliente: ");
+        let bookId = prompt("Ingrese el ID del libro: ");
 
-        const loan = newLoan({
-            client_id,
-            book_id
+        const loan = createNewLoan({
+            clientId,
+            bookId
         });
         console.log("Préstamo creado exitosamente", loan);
     } catch (error) {
@@ -25,8 +23,8 @@ const createLoan = () => {
 
 const deleteLoan = () => {
     try {
-        const idLoan = prompt("Eliminar un Préstamo, ingrese el id: ");
-        const result = removeLoan(idLoan);
+        const loanId = prompt("Eliminar un Préstamo, ingrese el id: ");
+        const result = removeLoan(loanId);
         console.log("Préstamo eliminado", result);
     } catch (error) {
         console.error("Error al eliminar el préstamo:", error.message);
@@ -35,7 +33,6 @@ const deleteLoan = () => {
 
 const viewLoans = () => {
     try {
-        
         const loans = getAllLoans();
         console.table(loans);
     } catch (error) {
@@ -45,21 +42,21 @@ const viewLoans = () => {
 
 const editLoan = () => {
     try {
-        let idLoan = prompt("Ingrese el id del préstamo a editar: ");
-        let client_id = prompt("Ingrese el nuevo ID del cliente: ");
-        let book_id = prompt("Ingrese el nuevo ID del libro: ");
-        let fecha_devolucion = prompt("Ingrese la nueva fecha de devolución (YYYY-MM-DD): ");
-        let estado = prompt("Ingrese el nuevo estado (activo/devuelto): ");
+        let loanId = prompt("Ingrese el id del préstamo a editar: ");
+        let clientId = prompt("Ingrese el nuevo ID del cliente: ");
+        let bookId = prompt("Ingrese el nuevo ID del libro: ");
+        let returnDate = prompt("Ingrese la nueva fecha de devolución (YYYY-MM-DD): ");
+        let status = prompt("Ingrese el nuevo estado (activo/devuelto): ");
 
-        const dataLoan = updateLoan({
-            idLoan,
-            client_id,
-            book_id,
-            fecha_devolucion,
-            estado
+        const updatedLoan = updateLoan({
+            loanId,
+            clientId,
+            bookId,
+            returnDate,
+            status
         });
 
-        console.log("Préstamo editado", dataLoan);
+        console.log("Préstamo editado", updatedLoan);
     } catch (error) {
         console.error("Error al editar el préstamo:", error.message);
     }
@@ -68,9 +65,9 @@ const editLoan = () => {
 const viewOneLoan = () => {
     console.table(getAllLoans())
     try {
-        const buscarId = prompt("Buscar id del préstamo: ");
-        const loan = getLoanById(buscarId);
-        console.table( loan);
+        const searchId = prompt("Buscar id del préstamo: ");
+        const loan = getLoanById(searchId);
+        console.table(loan);
     } catch (error) {
         console.error("Error al buscar el préstamo:", error.message);
     }

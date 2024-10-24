@@ -1,48 +1,73 @@
-## biblioteca-StellaMaris-JuanMarcelo
-# TP programacion primer año TECDA - Lucas Salvatori
-## TP Integrador
-### Octubre 2024
+# biblioteca-StellaMaris-JuanMarcelo
 
-1. Realiza un programa que permita cargar, editar y eliminar información de diferentes
-elementos los cuales estarán relacionados entre ellos. Además el programa deberá
-realizar las funcionalidades expresadas en el enunciado de cada sistema.
-Evalúa y analiza que datos serán necesarios almacenar en cada elemento.
-2. El trabajo puede ser realizado en grupo con un máximo de 3 integrantes y se otorgará
-una lista de posibles programas a realizar en donde cada grupo deberá inscribirse para
-realizarlo.
-3. El código será realizado en repositorio github donde deberá constar los commits
-realizados por cada uno de los integrantes del grupo. No se aceptarán repositorios que
-posean pocos commits o realizados por solo alguno de los integrantes del grupo. El
-enlace del repositorio deberá publicarse en la planilla donde se seleccionó el trabajo.
-4. La fecha de entrega del trabajo es el viernes 25 de octubre, por lo que no se tendrán en
-cuenta commits al repositorio luego de esa fecha. La defensa de los trabajos se
-repartirán entre los días 29 y 31, donde mediante sorteo el día de clase se definirá que
-grupos exponen cada día.
-5. Durante la defensa deberán explicar brevemente lo realizado y se les propondrá
-realizar una mejora durante la clase la cual deberán subir al repositorio antes de
-finalizada la misma. Cada integrante del grupo debe demostrar conocimiento del
-código realizado.
-6. Los que logren una nota 7 o más promocionará la materia (no rendirán final), incluso si
-no aprobó el primer cuatrimestre (siempre y cuando se haya presentado a algún
-exámen). La nota de final se considerará como promedio de los cuatrimestres. Si el
-alumno que promociona y haya desaprobado el 1er cuatrimestre desea tener mayor
-nota podrá optar por rendir final regularmente (deberá manifestarlo con anterioridad a
-la mesa de examen). Los que no cumplan los objetivos de aprobación tendrán una
-instancia de recuperatorio durante los días 5 o 7 de noviembre con modalidad a definir.
-Para la realización de los programas recuerda modularizar correctamente el código utilizando
-funciones y declarando las variables necesarias de forma más localmente posible.
-Intenta utilizar las estructuras de datos más adecuadas para garantizar un programa escalable
-fácilmente.
-Además, ten en cuenta de agrupar las funcionalidades en diferentes archivos javascript e
-importando las distintas funcionalidades según sean necesarias.
+## TP Programación Primer Año TECDA - Lucas Salvatori
+### TP Integrador - Octubre 2024
 
+## Sistema de Préstamos de Libros
 
-## Sistema de Prestamos de Libros: 
+Este proyecto es una aplicación de consola que gestiona préstamos de libros de una librería. El sistema permite cargar, editar y eliminar información de libros, clientes y préstamos, los cuales están relacionados entre sí.
 
-Crea una aplicación que gestione prestamos de libros
-de una librería. El sistema debe poder cargar libros con propiedades como título, autor,
-género, precio, etc. (agrega cualquier dato que consideres necesario). Además, se
-deben poder cargar clientes y préstamos de libros que vincularán los datos de los
-clientes y los libros prestados. Un cliente puede tener múltiples préstamos activos, y
-los préstamos deben registrar la fecha de inicio y devolver el libro. Permite calcular
-cuántos libros ha tomado prestado un cliente y qué libros están disponibles.
+### Funcionalidades principales:
+
+1. Gestión de Libros:
+   - Cargar nuevos libros con propiedades como título, autor, género, ISBN, fecha de publicación y estado.
+   - Editar información de libros existentes.
+   - Eliminar libros del sistema.
+   - Ver lista de todos los libros y buscar libros específicos.
+
+2. Gestión de Clientes:
+   - Registrar nuevos clientes con información como nombre, email, teléfono y dirección.
+   - Editar información de clientes existentes.
+   - Eliminar clientes del sistema.
+   - Ver lista de todos los clientes y buscar clientes específicos.
+
+3. Gestión de Préstamos:
+   - Crear nuevos préstamos vinculando clientes con libros.
+   - Registrar fechas de inicio y devolución de préstamos.
+   - Editar información de préstamos existentes.
+   - Eliminar préstamos del sistema.
+   - Ver lista de todos los préstamos y buscar préstamos específicos.
+
+4. Funcionalidades adicionales:
+   - Calcular cuántos libros ha tomado prestado un cliente.
+   - Verificar qué libros están disponibles para préstamo.
+
+### Estructura del Proyecto:
+
+- `src/Controllers/`: Contiene la lógica de negocio para libros, clientes y préstamos.
+- `src/Repositories/`: Maneja las operaciones de datos para cada entidad.
+- `src/Models/`: Define los esquemas de datos para libros, clientes y préstamos.
+- `src/utils/Menu/`: Contiene los archivos para la interfaz de usuario en consola.
+- `databases/`: Almacena los archivos JSON que actúan como base de datos local.
+
+### Tecnologías Utilizadas:
+
+- JavaScript (Node.js)
+- db-local: Para almacenamiento local de datos
+- prompt-sync: Para manejo de entrada de usuario en consola
+- @formkit/tempo: Para formateo de fechas
+
+### Instrucciones de Uso:
+
+1. Clona el repositorio.
+2. Instala las dependencias con `npm install`.
+3. Ejecuta el programa con `npm start`.
+4. Sigue las instrucciones en consola para navegar por el sistema.
+
+---
+
+## Información del TP
+
+1. El programa permite cargar, editar y eliminar información de diferentes elementos relacionados entre sí.
+2. El trabajo puede ser realizado en grupo con un máximo de 3 integrantes.
+3. El código debe ser realizado en un repositorio GitHub con commits de todos los integrantes.
+4. Fecha de entrega: viernes 25 de octubre.
+5. La defensa de los trabajos se realizará entre los días 29 y 31 de octubre.
+6. Durante la defensa, se deberá explicar lo realizado y realizar una mejora propuesta.
+7. Una nota de 7 o más promociona la materia.
+
+Para la realización del programa, se ha modularizado correctamente el código utilizando funciones y declarando las variables de forma local cuando es posible. Se han utilizado estructuras de datos adecuadas para garantizar la escalabilidad del programa, y las funcionalidades se han agrupado en diferentes archivos JavaScript, importándolas según sea necesario.
+
+---
+
+Desarrollado por Stella Maris Ibarra y Juan Marcelo Rodriguez
