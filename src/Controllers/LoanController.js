@@ -66,10 +66,11 @@ const editLoan = () => {
 }
 
 const viewOneLoan = () => {
+    console.table(getAllLoans())
     try {
         const buscarId = prompt("Buscar id del préstamo: ");
         const loan = getLoanById(buscarId);
-        console.log("Préstamo encontrado:", loan);
+        console.table( loan);
     } catch (error) {
         console.error("Error al buscar el préstamo:", error.message);
     }

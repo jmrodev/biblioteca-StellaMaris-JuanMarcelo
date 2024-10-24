@@ -42,6 +42,7 @@ const getAllLoans = () => {
 
         return {
             ...loan._doc,
+            id: loan._id,
             client_name: client ? client.username : "Cliente no encontrado",
             book_title: book ? book.titulo : "Libro no encontrado",
             F_prestamo: loan.fecha_prestamo,
@@ -55,6 +56,7 @@ const getAllLoans = () => {
 }
 
 const getLoanById = (id) => {
+   
     return Loan.findOne({ _id: parseInt(id) });
 }
 
