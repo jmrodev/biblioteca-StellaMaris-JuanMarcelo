@@ -1,5 +1,5 @@
 import prompt from "../utils/prompt.js";
-import { createNewBook, getAllBooks, getBookById, removeBook, updateBook } from '../Repositories/BookRepository.js'
+import { createNewBook, getAllBooks, getBookById, removeBook,findStatus } from '../Repositories/BookRepository.js'
 
 const createBook = () => {
     try {
@@ -79,4 +79,11 @@ const viewOneBook = () => {
     }
 }
 
-export { createBook, deleteBook, viewBooks, editBook, viewOneBook }
+const listarBookbyStatus =()=>{
+    const statusbook = prompt("Buscar status: ");
+        const book = findStatus(statusbook);
+        console.log("Libro encontrado:", book);
+
+}
+
+export { createBook, deleteBook, viewBooks, editBook, viewOneBook ,listarBookbyStatus}

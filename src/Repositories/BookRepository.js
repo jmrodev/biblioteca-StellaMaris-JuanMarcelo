@@ -1,4 +1,5 @@
 import Book from '../Models/BookSchema.js'
+import {  } from "module";
 
 const createNewBook = (bookData) => {
     if (!bookData.title || !bookData.author || !bookData.isbn || !bookData.genre || !bookData.publicationDate) {
@@ -15,7 +16,7 @@ const createNewBook = (bookData) => {
         status: bookData.status || "available"
     });
 
-    return newBook;
+    return newBook.save();
 }
 
 const removeBook = (id) => {
@@ -47,5 +48,11 @@ const updateBook = (bookData) => {
 
     return book.save();
 }
+const findStatus =(status)=>{
+   const findStatus= listarStatus().find({
+        "status":status
+    })
+    return findStatus
+}
 
-export { createNewBook, removeBook, getAllBooks, updateBook, getBookById }
+export { createNewBook, removeBook, getAllBooks, updateBook, getBookById , findStatus}

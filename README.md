@@ -1,5 +1,7 @@
 # biblioteca-StellaMaris-JuanMarcelo
 
+[English version](#english-version)
+
 ## TP Programación Primer Año TECDA - Lucas Salvatori
 ### TP Integrador - Octubre 2024
 
@@ -71,3 +73,79 @@ Para la realización del programa, se ha modularizado correctamente el código u
 ---
 
 Desarrollado por Stella Maris Ibarra y Juan Marcelo Rodriguez
+
+---
+
+# English version
+
+## TECDA First Year Programming Assignment - Lucas Salvatori
+### Integrative Assignment - October 2024
+
+## Library Book Loan System
+
+This project is a console application that manages book loans for a library. The system allows loading, editing, and deleting information about books, clients, and loans, which are interrelated.
+
+### Main Features:
+
+1. Book Management:
+   - Add new books with properties such as title, author, genre, ISBN, publication date, and status.
+   - Edit existing book information.
+   - Remove books from the system.
+   - View list of all books and search for specific books.
+
+2. Client Management:
+   - Register new clients with information such as name, email, phone, and address.
+   - Edit existing client information.
+   - Remove clients from the system.
+   - View list of all clients and search for specific clients.
+
+3. Loan Management:
+   - Create new loans by linking clients with books.
+   - Record loan start and return dates.
+   - Edit existing loan information.
+   - Remove loans from the system.
+   - View list of all loans and search for specific loans.
+
+4. Additional Features:
+   - Calculate how many books a client has borrowed.
+   - Check which books are available for loan.
+
+### Project Structure:
+
+- `src/Controllers/`: Contains business logic for books, clients, and loans.
+- `src/Repositories/`: Handles data operations for each entity.
+- `src/Models/`: Defines data schemas for books, clients, and loans.
+- `src/utils/Menu/`: Contains files for the console user interface.
+- `databases/`: Stores JSON files that act as a local database.
+
+### Technologies Used:
+
+- JavaScript (Node.js)
+- db-local: For local data storage
+- prompt-sync: For handling user input in console
+- @formkit/tempo: For date formatting
+
+### Usage Instructions:
+
+1. Clone the repository.
+2. Install dependencies with `npm install`.
+3. Run the program with `npm start`.
+4. Follow the console instructions to navigate the system.
+
+---
+
+## Assignment Information
+
+1. The program allows loading, editing, and deleting information of different interrelated elements.
+2. The work can be done in groups with a maximum of 3 members.
+3. The code must be developed in a GitHub repository with commits from all members.
+4. Submission date: Friday, October 25th.
+5. Project defense will take place between October 29th and 31st.
+6. During the defense, the work must be explained and a proposed improvement must be implemented.
+7. A grade of 7 or higher promotes the subject.
+
+For the development of the program, the code has been properly modularized using functions and declaring variables locally when possible. Appropriate data structures have been used to ensure program scalability, and functionalities have been grouped into different JavaScript files, importing them as needed.
+
+---
+
+Developed by Stella Maris Ibarra and Juan Marcelo Rodriguez

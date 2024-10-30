@@ -5,17 +5,23 @@ const createNewLoan = (loanData) => {
     if (!loanData.clientId || !loanData.bookId) {
         throw new Error("ID del cliente y del libro son obligatorios");
     }
+    const loanDate = new Date();
+    const returnDate = new Date();
+
+    returnDate.setDate(loanDate.getDate()+ 14); 
 
     const newLoan = Loan.create({
         _id: Math.floor(Math.random() * 100000),
         clientId: parseInt(loanData.clientId),
         bookId: parseInt(loanData.bookId),
-        loanDate: format(new Date(), "full"),
-        returnDate: null,
+        loanDate: format(loanDate, "full"),
+        returnDate: format(returnDate,"full"),
         status: "active"
     });
 
-    return newLoan;
+    console.log(newLoan);
+    
+    return newLoan.save();
 }
 
 const removeLoan = (id) => {
