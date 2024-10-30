@@ -80,7 +80,7 @@ const viewOneBook = () => {
 }
 
 const listarBookbyStatus =()=>{
-    const statusbook = prompt("Buscar status: ");
+    const statusbook = prompt("Buscar status( \n Disponible \n En reparación \n Prestado ): ");
         const book = findStatus(statusbook);
         console.log("Libro encontrado:", book);
 
