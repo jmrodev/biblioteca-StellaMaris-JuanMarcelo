@@ -6,7 +6,7 @@
         "isbn": "rty",
         "genre": "rty",
         "publicationDate": "2024-08-08",
-        "status": "disponible"
+        "status": "Disponible"
     },
     {
         "_id": 12345,
@@ -42,7 +42,7 @@
         "isbn": "978-8420471839",
         "genre": "Novela",
         "publicationDate": "1963-10-10",
-        "status": "En reparación"
+        "status": "En reparacion"
     },
     {
         "_id": 56789,
