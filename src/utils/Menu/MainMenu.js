@@ -23,7 +23,7 @@ const mainMenu = async () => {
                 break;
             case 4:
                 try {
-                    const result = await test();
+                    const result = await test("En reparación");
                     console.log('Resultado de la prueba:', result);
                 } catch (error) {
                     console.error('Error en la prueba:', error);

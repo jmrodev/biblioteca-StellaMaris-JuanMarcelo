@@ -32,6 +32,7 @@ const viewClients = () => {
 }
 
 const editClient = () => {
+    viewClients()
     let clientId = prompt("Ingrese el id del cliente a editar")
     let username = prompt("Ingrese el nombre")
     let email = prompt("Ingrese email")
