@@ -1,13 +1,7 @@
-<<<<<<< HEAD
-
-
-
 
 import Schema from '../Models/ClientSchema.js';
 import chalk from 'chalk';
-=======
-  import Book  from "../Models/BookSchema.js";
->>>>>>> 358635a (Refactor client database and add registration date)
+import Book  from "../Models/BookSchema.js";
 
   const statusOfBook = (statusBook ) =>{
     return Book.find( (obj) => obj.status == statusBook )
